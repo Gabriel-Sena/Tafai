@@ -6,54 +6,31 @@
 }
 
 body {
-  background-color: red;  /* Fundo vermelho para a moldura */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;  /* Ocupa a altura total da viewport */
+  border: 1.5rem solid red;  /* Fundo vermelho para a moldura */
+  max-height: 100vh;  /* Ocupa a altura total da viewport */
   font-family: 'Asket', sans-serif;
 }
 
 .wrapper {
-  width: 100%;          /* Largura total da tela */
-  max-width: calc(100vw - 2cm);  /* Subtrai 1cm de cada lado */
-  height: calc(100vh - 2cm);     /* Subtrai 1cm do topo e 1cm do rodapé */
-  background-color: white;  /* Fundo branco para o conteúdo */
+  width: 100%; /* Largura total da tela */
+  height: 100%;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  overflow: auto;           /* Permite rolagem se o conteúdo for maior que o wrapper */
-}
-
-/* Botão de Login/Cadastro */
-.login-button {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.login-button a {
-  background-color: #ff0000;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.login-button a:hover {
-  background-color: #cc0000;
 }
 
 /* Fachada do Comércio */
 .fachada img {
   width: 100%;
-  height: auto;
+  height: 15rem;
   margin-bottom: 20px;
 }
 
 /* História do Comércio */
-.historia img {
+.historia p {
+  border: 1PX solid red;
   width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  height: 8rem;
+  margin-bottom: .5rem;
+  font-size: larger;
 }
 
 /* Fotos do Local */
@@ -74,7 +51,6 @@ body {
 .menu ul {
   list-style: none;
   text-align: center;
-  background-color: #f2f2f2;
   padding: 15px;
 }
 
