@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/vars.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css"> <!-- Arquivo de estilo principal -->
+  <title>Tabela</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+        <!-- Imagem Tabela -->
+        <div class="tabela-imagem">
+            <img src="../assets/images/tabela.png" alt="Imagem da Tabela">
+        </div>
+
+        <!-- Caixa de Busca -->
+        <div class="search-box">
+            <label for="search">Buscar Produto:</label>
+            <input type="text" id="search" placeholder="Digite o nome do produto">
+            <button onclick="searchProduct()">Buscar</button>
+        </div>
+
+        <!-- Tabela de Produtos -->
+        <div class="product-table">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Código de Barras</th>
+                        <th>Produto</th>
+                        <th>Marca</th>
+                        <th>Caixa/Peso</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>7 898171340307</td>
+                        <td>Batata Palha</td>
+                        <td>Biscoitone</td>
+                        <td>24X150G</td>
+                        <td>R$ 8,99</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>7 898171340215</td>
+                        <td>Suspiro</td>
+                        <td>Biscoitone</td>
+                        <td>24X150G</td>
+                        <td>R$ 5,39</td>
+                    </tr>
+                    <tr>
+                        <td>305</td>
+                        <td>7 897014200044</td>
+                        <td>Palito Caseiro</td>
+                        <td>Franbert</td>
+                        <td>20X80G</td>
+                        <td>R$ 4,49</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>7 898097130099</td>
+                        <td>Biscovilho Doce</td>
+                        <td>Grannieri</td>
+                        <td>20X80G</td>
+                        <td>R$ 3,59</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>7 898097130051</td>
+                        <td>Biscovilho Salgado</td>
+                        <td>Grannieri</td>
+                        <td>20X80G</td>
+                        <td>R$ 3,59</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>7 898097130358</td>
+                        <td>Biscovilho Queijo</td>
+                        <td>Grannieri</td>
+                        <td>20X80G</td>
+                        <td>R$ 3,59</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>7 898912106216</td>
+                        <td>Broa de Amendoim</td>
+                        <td>Klain</td>
+                        <td>15X250G</td>
+                        <td>R$ 6,29</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>7 898912106872</td>
+                        <td>Amendoim c/ Chocolate</td>
+                        <td>Klain</td>
+                        <td>15X260G</td>
+                        <td>R$ 6,99</td>
+                    </tr>
+                    <tr>
+                        <td>156</td>
+                        <td>7 898963777946	</td>
+                        <td>Biscoito Amantegado</td>
+                        <td>Klain</td>
+                        <td>20X240G</td>
+                        <td>R$ 5,19</td>
+                    </tr>
+                    <tr>
+                        <td>275</td>
+                        <td>7 896259700036</td>
+                        <td>Geléia de Mocotó</td>
+                        <td>Mocoforte</td>
+                        <td>50X140G</td>
+                        <td>R$ 3,19</td>
+                    </tr>
+                    <tr>
+                        <td>279</td>
+                        <td>7 896564403080</td>
+                        <td>Arroz Caramelizado</td>
+                        <td>Paulista</td>
+                        <td>24X90G</td>
+                        <td>R$ 4,89</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>7 896564401277</td>
+                        <td>Champagne</td>
+                        <td>Paulista</td>
+                        <td>12X300G</td>
+                        <td>R$ 9,19</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>7 896564 401154</td>
+                        <td>Champagne</td>
+                        <td>Paulista</td>
+                        <td>24X150G</td>
+                        <td>R$ 4,69</td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>7 896564401154</td>
+                        <td>Sembei</td>
+                        <td>Paulista</td>
+                        <td>15X250G</td>
+                        <td>R$ 11,59</td>
+                    </tr>
+                    <tr>
+                        <td>205</td>
+                        <td>7 896564401178</td>
+                        <td>Sembei</td>
+                        <td>Paulista</td>
+                        <td>24X90G</td>
+                        <td>R$ 4,99</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>7 896564401277</td>
+                        <td>Sequilho</td>
+                        <td>Paulista</td>
+                        <td>24X150G</td>
+                        <td>R$ 5,99</td>
+                    </tr>
+                    <tr>
+                        <td>269</td>
+                        <td>7 896532700302</td>
+                        <td>Coco</td>
+                        <td>Petyan</td>
+                        <td>15X300G</td>
+                        <td>R$ 3,69</td>
+                    </tr>
+                    <tr>
+                        <td>270</td>
+                        <td>7 896532700319</td>
+                        <td>Doce Petyan</td>
+                        <td>Petyan</td>
+                        <td>20X350G</td>
+                        <td>R$ 3,49</td>
+                    </tr>
+                    <tr>
+                        <td>252</td>
+                        <td>7 897053100077</td>
+                        <td>Sete Capas</td>
+                        <td>São Benedito</td>
+                        <td>20X300G</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>7 896970700018</td>
+                        <td>Pipoca Tigrinho</td>
+                        <td>Tigrinho</td>
+                        <td>30X75G</td>
+                        <td>R$ 1,89</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>7 898908535020</td>
+                        <td>Beijo Divino</td>
+                        <td>Konrad</td>
+                        <td>20X300G</td>
+                        <td>R$ 7,59</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>7 898908535075</td>
+                        <td>Beijo de Rei</td>
+                        <td>Konrad</td>
+                        <td>20X300G</td>
+                        <td>R$ 5,89</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>7 898908535013</td>
+                        <td>Beijo Glacial</td>
+                        <td>Konrad</td>
+                        <td>20X300G</td>
+                        <td>R$ 5,89</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>7 898908535037</td>
+                        <td>Beijo Tafaí</td>
+                        <td>Konrad</td>
+                        <td>20X300G</td>
+                        <td>R$ 5,59</td>
+                    </tr>
+                    <tr>
+                        <td>263</td>
+                        <td>7 896486202884</td>
+                        <td>Coquinho</td>
+                        <td>Prodasa</td>
+                        <td>12X400G</td>
+                        <td>R$ 5,69</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="../pages/produtos.html">Produtos</a></li>
+                <li><a href="../pages/tabela.html">Tabela de Produtos</a></li>
+                <li><a href="../pages/pedidos.html">Pedidos</a></li>
+                <li><a href="../pages/onde_tem.html">Onde Tem</a></li>
+                <li><a href="../pages/localizacao.html">Localização</a></li>
+            </ul>
+        </nav>
+
+    </div>
+  </div>
+
+  <script>
+    function searchProduct() {
+      var searchValue = document.getElementById('search').value.toLowerCase();
+      var table = document.getElementById('productTable');
+      var rows = table.getElementsByTagName('tr');
+
+      for (var i = 1; i < rows.length; i++) {
+        var productName = rows[i].getElementsByTagName('td')[2].innerText.toLowerCase();
+        
+        if (productName.includes(searchValue)) {
+          rows[i].style.display = '';
+        } else {
+          rows[i].style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
