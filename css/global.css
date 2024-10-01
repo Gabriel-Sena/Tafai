@@ -1,0 +1,62 @@
+/* Estilo Geral */
+@import url(./vars.css);
+@import url(./reset.css);
+
+body {
+  border: 1rem solid var(--bg-border-color);
+  min-height: 100vh;  /* Ocupa a altura total da viewport */
+  font-family: 'Asket', sans-serif;
+}
+
+/* Menu de Navegação */
+.menu {
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #ccc;  /* Opcional: borda superior no menu */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.menu ul li {
+  display: inline;
+  margin: 0 15px;
+  position: relative; /* Necessário para a barra vertical */
+}
+
+.menu ul li:not(:last-child)::after {
+  content: '|';  /* Barra vertical como divisão */
+  position: absolute;
+  right: -15px;  /* Ajuste para posicionar a barra */
+  color: #333;   /* Cor da barra */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #ff0000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .fotos-local {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .fotos-local img {
+      width: 100%;
+  }
+}
