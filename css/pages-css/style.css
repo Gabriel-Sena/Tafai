@@ -1,0 +1,39 @@
+@import url(../global.css);
+
+.wrapper {
+  width: 100%;          /* Largura total da tela */
+  max-width: calc(100vw - 2cm);  /* Subtrai 1cm de cada lado */
+  height: calc(100vh - 2cm);     /* Subtrai 1cm do topo e 1cm do rodapé */
+  background-color: white;  /* Fundo branco para o conteúdo */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  overflow: auto;           /* Permite rolagem se o conteúdo for maior que o wrapper */
+}
+
+/* Fachada do Comércio */
+.fachada img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* História do Comércio */
+.historia img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Fotos do Local */
+.fotos-local {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fotos-local img {
+  width: 32%;
+  height: auto;
+  border-radius: 5px;
+}
