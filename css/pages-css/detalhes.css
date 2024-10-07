@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura da viewport */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.product-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    flex: 1; /* Para ocupar o espaço acima da imagem da unidade */
+}
+
+.unit-image {
+    margin-top: 20px; /* Espaçamento acima da imagem da unidade */
+}
+
+.button-container {
+    text-align: center; /* Centraliza o botão */
+    margin: 20px 0;
+}

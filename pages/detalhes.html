@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css"> <!-- Importando o arquivo global.css -->
+    <link rel="stylesheet" href="../css/pages-css/produto-detalhes.css">
+    <title>Detalhes do Produto</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="product-name">Nome do Produto</h1>
+        <div class="product-container">
+            <div class="product-image" id="product-image"></div>
+            <div class="product-info">
+                <div class="product-description" id="product-description"></div>
+                <img src="" alt="Unidade" id="unit-image" class="unit-image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Menu</a></li>
+            <li><a href="../pages/produtos.html">Produtos</a></li>
+            <li><a href="../pages/tabela.html">Tabela de Produtos</a></li>
+            <li><a href="../pages/pedidos.html">Pedidos</a></li>
+            <li><a href="../pages/onde_tem.html">Onde Tem</a></li>
+            <li><a href="../pages/localizacao.html">Localização</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Função para buscar o produto salvo
+        function getSelectedProduct() {
+            return localStorage.getItem('selectedProduct');
+        }
+
+        // Dados dos produtos
+        const products = {
+            produto1: {
+                nome: "Batata Palha",
+                imagem: "../assets/images/produtos/produto1.png",
+                descricao: "Deliciosa batata palha crocante.",
+                unidade: "../assets/images/produtos/unidades/unidade_produto1.png"
+            },
+            produto2: {
+                nome: "Suspiro",
+                imagem: "../assets/images/produtos/produto2.png",
+                descricao: "Leve e doce suspiro, perfeito para sobremesas.",
+                unidade: "../assets/images/produtos/unidades/unidade_produto2.png"
+            },
+            produto3: {
+                nome: "Biscoito Salgado",
+                imagem: "../assets/images/produtos/produto3.png",
+                descricao: "Biscoito crocante com sabor irresistível.",
+                unidade: "../assets/images/produtos/unidades/unidade_produto3.png"
+            },
+            // Adicione mais produtos aqui
+        };
+
+        // Carrega as informações do produto baseado no ID
+        function loadProduct() {
+            const selectedProduct = getSelectedProduct();
+
+            switch(selectedProduct) {
+                case 'produto1':
+                    displayProduct(products.produto1);
+                    break;
+                case 'produto2':
+                    displayProduct(products.produto2);
+                    break;
+                case 'produto3':
+                    displayProduct(products.produto3);
+                    break;
+                // Adicione mais cases conforme necessário
+                default:
+                    document.getElementById('product-info').innerHTML = '<p>Produto não encontrado.</p>';
+            }
+        }
+
+        // Função para exibir o produto
+        function displayProduct(product) {
+            document.getElementById('product-name').innerText = product.nome;
+            document.getElementById('product-image').style.backgroundImage = `url('${product.imagem}')`;
+            document.getElementById('product-description').innerHTML = product.descricao;
+            document.getElementById('unit-image').src = product.unidade;
+        }
+
+        // Carregar o produto ao carregar a página
+        window.onload = loadProduct;
+    </script>
+
+</body>
+</html>
