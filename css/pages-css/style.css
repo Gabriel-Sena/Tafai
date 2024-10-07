@@ -1,27 +1,30 @@
 @import url(../global.css);
 
-.wrapper {
-  width: 100%;          /* Largura total da tela */
-  max-width: calc(100vw - 2cm);  /* Subtrai 1cm de cada lado */
-  height: calc(100vh - 2cm);     /* Subtrai 1cm do topo e 1cm do rodapé */
-  background-color: white;  /* Fundo branco para o conteúdo */
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  overflow: auto;           /* Permite rolagem se o conteúdo for maior que o wrapper */
+
+.historia {
+  font-family: Arial;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: justify;
+
 }
 
 /* Fachada do Comércio */
 .fachada img {
-  width: 100%;
+  width: 95%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* História do Comércio */
 .historia img {
+  margin-top: 5%;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
+  margin-left: 5px;
 }
 
 /* Fotos do Local */
@@ -30,10 +33,13 @@
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
 }
 
 .fotos-local img {
-  width: 32%;
+  width: 25%;
   height: auto;
   border-radius: 5px;
 }
