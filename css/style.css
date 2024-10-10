@@ -1,0 +1,90 @@
+/* Estilo Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 1.5rem solid red;  /* Fundo vermelho para a moldura */
+  max-height: 100vh;  /* Ocupa a altura total da viewport */
+  font-family: 'Asket', sans-serif;
+}
+
+.wrapper {
+  width: 100%; /* Largura total da tela */
+  height: 100%;
+  padding: 20px;
+}
+
+/* Fachada do Comércio */
+.fachada img {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 20px;
+}
+
+/* História do Comércio */
+.historia p {
+  border: 1PX solid red;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: .5rem;
+  font-size: larger;
+}
+
+/* Fotos do Local */
+.fotos-local {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fotos-local img {
+  width: 32%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Menu de Navegação */
+.menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 15px;
+}
+
+.menu ul li {
+  display: inline;
+  margin: 0 15px;
+  position: relative; /* Necessário para a barra vertical */
+}
+
+.menu ul li:not(:last-child)::after {
+  content: '|';  /* Barra vertical como divisão */
+  position: absolute;
+  right: -15px;  /* Ajuste para posicionar a barra */
+  color: #333;   /* Cor da barra */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #ff0000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .fotos-local {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .fotos-local img {
+      width: 100%;
+  }
+}
