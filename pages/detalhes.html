@@ -13,7 +13,9 @@
         <div class="product-container">
             <div class="product-image" id="product-image"></div>
             <div class="product-info">
-                <div class="product-description" id="product-description"></div>
+                <table class="product-table" id="product-description">
+                    <!-- A tabela será preenchida dinamicamente pelo JavaScript -->
+                </table>
                 <img src="" alt="Unidade" id="unit-image" class="unit-image">
             </div>
         </div>
@@ -45,22 +47,354 @@
             produto1: {
                 nome: "Batata Palha",
                 imagem: "../assets/images/produtos/produto1.png",
-                descricao: "Deliciosa batata palha crocante.",
+                descricao: [
+                    { label: "Código", value: "7" },
+                    { label: "Produto", value: "BATATA PALHA" },
+                    { label: "Marca", value: "BISCOITONE" },
+                    { label: "Caixa com", value: "24 Unidades 150GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898171340307" },
+                    { label: "Dimensões", value: "Alt: 22.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
                 unidade: "../assets/images/produtos/unidades/unidade_produto1.png"
             },
             produto2: {
                 nome: "Suspiro",
                 imagem: "../assets/images/produtos/produto2.png",
-                descricao: "Leve e doce suspiro, perfeito para sobremesas.",
+                descricao: [
+                    { label: "Código", value: "37" },
+                    { label: "Produto", value: "SUSPIRO" },
+                    { label: "Marca", value: "BISCOITONE" },
+                    { label: "Caixa com", value: "24 Unidades 150GR" },
+                    { label: "Validade", value: "360 dias" },
+                    { label: "Código de Barras", value: "7 898171340215" },
+                    { label: "Dimensões", value: "Alt: 26.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
                 unidade: "../assets/images/produtos/unidades/unidade_produto2.png"
             },
             produto3: {
-                nome: "Biscoito Salgado",
+                nome: "Palito Caseiro",
                 imagem: "../assets/images/produtos/produto3.png",
-                descricao: "Biscoito crocante com sabor irresistível.",
+                descricao: [
+                    { label: "Código", value: "305" },
+                    { label: "Produto", value: "PALITO CASEIRO" },
+                    { label: "Marca", value: "FRANBERT" },
+                    { label: "Caixa com", value: "20 Unidades 80GR" },
+                    { label: "Validade", value: "150 dias" },
+                    { label: "Código de Barras", value: "7 897014200044" },
+                    { label: "Dimensões", value: "Alt: 25.00cm, Larg: 16.00cm, Compr: 5.00cm" }
+                ],
                 unidade: "../assets/images/produtos/unidades/unidade_produto3.png"
             },
-            // Adicione mais produtos aqui
+            produto4: {
+                nome: "Biscovilho Doce",
+                imagem: "../assets/images/produtos/produto4.png",
+                descricao: [
+                    { label: "Código", value: "31" },
+                    { label: "Produto", value: "BISCOVILHO DOCE" },
+                    { label: "Marca", value: "GRANNIERI" },
+                    { label: "Caixa com", value: "20 Unidades 80GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898097130099" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 20.00cm, Compr: 6.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto4.png"
+            },
+            produto5: {
+                nome: "Biscovilho Salgado",
+                imagem: "../assets/images/produtos/produto5.png",
+                descricao: [
+                    { label: "Código", value: "30" },
+                    { label: "Produto", value: "BISCOVILHO SALGADO" },
+                    { label: "Marca", value: "GRANNIERI" },
+                    { label: "Caixa com", value: "20 Unidades 80GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898097130051" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 20.00cm, Compr: 6.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto5.png"
+            },
+            produto6: {
+                nome: "Biscovilho Queijo",
+                imagem: "../assets/images/produtos/produto6.png",
+                descricao: [
+                    { label: "Código", value: "35" },
+                    { label: "Produto", value: "BISCOVILHO QUEIJO" },
+                    { label: "Marca", value: "GRANNIERI" },
+                    { label: "Caixa com", value: "20 Unidades 80GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898097130358" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 20.00cm, Compr: 6.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto6.png"
+            },
+            produto7: {
+                nome: "Broa de Amendoim",
+                imagem: "../assets/images/produtos/produto7.png",
+                descricao: [
+                    { label: "Código", value: "32" },
+                    { label: "Produto", value: "BROA DE AMENDOIM" },
+                    { label: "Marca", value: "KLAIN" },
+                    { label: "Caixa com", value: "15 Unidades 250GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898912106216" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto7.png"
+            },
+            produto8: {
+                nome: "Amendoim c/ Chocolate",
+                imagem: "../assets/images/produtos/produto8.png",
+                descricao: [
+                    { label: "Código", value: "36" },
+                    { label: "Produto", value: "AMENDOIM C/ CHOCOLATE" },
+                    { label: "Marca", value: "KLAIN" },
+                    { label: "Caixa com", value: "15 Unidades 260GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898912106872" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto8.png"
+            },
+            produto9: {
+                nome: "Bisc. Amanteigado",
+                imagem: "../assets/images/produtos/produto9.png",
+                descricao: [
+                    { label: "Código", value: "156" },
+                    { label: "Produto", value: "BISC. AMANTEIGADO" },
+                    { label: "Marca", value: "KLAIN" },
+                    { label: "Caixa com", value: "20 Unidades 240GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898963777946" },
+                    { label: "Dimensões", value: "Alt: 20.00cm, Larg: 16.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto9.png"
+            },
+            produto10: {
+                nome: "Geleia de Mocotó",
+                imagem: "../assets/images/produtos/produto10.png",
+                descricao: [
+                    { label: "Código", value: "275" },
+                    { label: "Produto", value: "GELEIA DE MOCOTÓ" },
+                    { label: "Marca", value: "MOCOFORTE" },
+                    { label: "Caixa com", value: "50 Unidades 140GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896259700036" },
+                    { label: "Dimensões", value: "Alt: 10.00cm, Larg: 13.00cm, Compr: 2.50cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto10.png"
+            },
+            produto11: {
+                nome: "Arroz Caramelizado",
+                imagem: "../assets/images/produtos/produto11.png",
+                descricao: [
+                    { label: "Código", value: "279" },
+                    { label: "Produto", value: "ARROZ CARAMELIZADO" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "24 Unidades 90GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564403080" },
+                    { label: "Dimensões", value: "Alt: 29.00cm, Larg: 6.00cm, Compr: 6.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto11.png"
+            },
+            produto12: {
+                nome: "Champagne",
+                imagem: "../assets/images/produtos/produto12.png",
+                descricao: [
+                    { label: "Código", value: "20" },
+                    { label: "Produto", value: "CHAMPAGNE" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "12 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564401277" },
+                    { label: "Dimensões", value: "Alt: 31.00cm, Larg: 12.00cm, Compr: 8.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto12.png"
+            },
+            produto13: {
+                nome: "Champagne",
+                imagem: "../assets/images/produtos/produto13.png",
+                descricao: [
+                    { label: "Código", value: "201" },
+                    { label: "Produto", value: "CHAMPAGNE" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "24 Unidades 150GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564 401154" },
+                    { label: "Dimensões", value: "Alt: 26.00cm, Larg: 13.00cm, Compr: 4.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto13.png"
+            },
+            produto14: {
+                nome: "Sembei",
+                imagem: "../assets/images/produtos/produto14.png",
+                descricao: [
+                    { label: "Código", value: "202" },
+                    { label: "Produto", value: "SEMBEI" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "12 Unidades 250GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564401154" },
+                    { label: "Dimensões", value: "Alt: 20.00cm, Larg: 12.00cm, Compr: 8.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto14.png"
+            },
+            produto15: {
+                nome: "Sembei",
+                imagem: "../assets/images/produtos/produto15.png",
+                descricao: [
+                    { label: "Código", value: "205" },
+                    { label: "Produto", value: "SEMBEI" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "24 Unidades 90GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564401178" },
+                    { label: "Dimensões", value: "Alt: 19.00cm, Larg: 13.00cm, Compr: 1.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto15.png"
+            },
+            produto16: {
+                nome: "Sequilho",
+                imagem: "../assets/images/produtos/produto16.png",
+                descricao: [
+                    { label: "Código", value: "10" },
+                    { label: "Produto", value: "SEQUILHO" },
+                    { label: "Marca", value: "PAULISTA" },
+                    { label: "Caixa com", value: "24 Unidades 150GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896564401277" },
+                    { label: "Dimensões", value: "Alt: 21.00cm, Larg: 14.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto16.png"
+            },
+            produto17: {
+                nome: "Coco",
+                imagem: "../assets/images/produtos/produto17.png",
+                descricao: [
+                    { label: "Código", value: "269" },
+                    { label: "Produto", value: "COCO" },
+                    { label: "Marca", value: "PETYAN" },
+                    { label: "Caixa com", value: "15 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896532700302" },
+                    { label: "Dimensões", value: "Alt: 30.00cm, Larg: 17.00cm, Compr: 6.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto17.png"
+            },
+            produto18: {
+                nome: "Doce Petyan",
+                imagem: "../assets/images/produtos/produto18.png",
+                descricao: [
+                    { label: "Código", value: "270" },
+                    { label: "Produto", value: "DOCE PETYAN" },
+                    { label: "Marca", value: "PETYAN" },
+                    { label: "Caixa com", value: "20 Unidades 350GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896532700319" },
+                    { label: "Dimensões", value: "Alt: 26.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto18.png"
+            },
+            produto19: {
+                nome: "Sete Capas",
+                imagem: "../assets/images/produtos/produto19.png",
+                descricao: [
+                    { label: "Código", value: "252" },
+                    { label: "Produto", value: "SETE CAPAS" },
+                    { label: "Marca", value: "SÃO BENEDITO" },
+                    { label: "Caixa com", value: "20 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 897053100077" },
+                    { label: "Dimensões", value: "Alt: 24.00cm, Larg: 13.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto19.png"
+            },
+            produto20: {
+                nome: "Pipoca Tigrinho",
+                imagem: "../assets/images/produtos/produto20.png",
+                descricao: [
+                    { label: "Código", value: "15" },
+                    { label: "Produto", value: "PIPOCA TIGRINHO" },
+                    { label: "Marca", value: "TIGRINHO" },
+                    { label: "Caixa com", value: "30 Unidades 75GR" },
+                    { label: "Validade", value: "70 dias" },
+                    { label: "Código de Barras", value: "7 896970700018" },
+                    { label: "Dimensões", value: "Alt: 25.00cm, Larg: 16.00cm, Compr: 3.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto20.png"
+            },
+            produto21: {
+                nome: "Beijo Divino",
+                imagem: "../assets/images/produtos/produto21.png",
+                descricao: [
+                    { label: "Código", value: "12" },
+                    { label: "Produto", value: "BEIJO DIVINO" },
+                    { label: "Marca", value: "KONRAD" },
+                    { label: "Caixa com", value: "20 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898908535020" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto21.png"
+            },
+            produto22: {
+                nome: "Beijo De Rei",
+                imagem: "../assets/images/produtos/produto22.png",
+                descricao: [
+                    { label: "Código", value: "50" },
+                    { label: "Produto", value: "BEIJO DE REI" },
+                    { label: "Marca", value: "KONRAD" },
+                    { label: "Caixa com", value: "20 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898908535075" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto22.png"
+            },
+            produto23: {
+                nome: "Beijo Glacial",
+                imagem: "../assets/images/produtos/produto23.png",
+                descricao: [
+                    { label: "Código", value: "25" },
+                    { label: "Produto", value: "BEIJO GLACIAL" },
+                    { label: "Marca", value: "KONRAD" },
+                    { label: "Caixa com", value: "20 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898908535013" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto23.png"
+            },
+            produto24: {
+                nome: "Beijo Tafaí",
+                imagem: "../assets/images/produtos/produto24.png",
+                descricao: [
+                    { label: "Código", value: "28" },
+                    { label: "Produto", value: "BEIJO TAFAÍ" },
+                    { label: "Marca", value: "KONRAD" },
+                    { label: "Caixa com", value: "20 Unidades 300GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 898908535037" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 17.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto24.png"
+            },
+            produto25: {
+                nome: "Coquinho",
+                imagem: "../assets/images/produtos/produto25.png",
+                descricao: [
+                    { label: "Código", value: "263" },
+                    { label: "Produto", value: "COQUINHO" },
+                    { label: "Marca", value: "PRODASA" },
+                    { label: "Caixa com", value: "12 Unidades 400GR" },
+                    { label: "Validade", value: "180 dias" },
+                    { label: "Código de Barras", value: "7 896486202884" },
+                    { label: "Dimensões", value: "Alt: 28.00cm, Larg: 20.00cm, Compr: 5.00cm" }
+                ],
+                unidade: "../assets/images/produtos/unidades/unidade_produto25.png"
+            },
+            
         };
 
         // Carrega as informações do produto baseado no ID
@@ -68,26 +402,102 @@
             const selectedProduct = getSelectedProduct();
 
             switch(selectedProduct) {
-                case 'produto1':
-                    displayProduct(products.produto1);
-                    break;
-                case 'produto2':
-                    displayProduct(products.produto2);
-                    break;
-                case 'produto3':
-                    displayProduct(products.produto3);
-                    break;
-                // Adicione mais cases conforme necessário
+    case 'produto1':
+        displayProduct(products.produto1);
+        break;
+    case 'produto2':
+        displayProduct(products.produto2);
+        break;
+    case 'produto3':
+        displayProduct(products.produto3);
+        break;
+    case 'produto4':
+        displayProduct(products.produto4);
+        break;
+    case 'produto5':
+        displayProduct(products.produto5);
+        break;
+    case 'produto6':
+        displayProduct(products.produto6);
+        break;
+    case 'produto7':
+        displayProduct(products.produto7);
+        break;
+    case 'produto8':
+        displayProduct(products.produto8);
+        break;
+    case 'produto9':
+        displayProduct(products.produto9);
+        break;
+    case 'produto10':
+        displayProduct(products.produto10);
+        break;
+    case 'produto11':
+        displayProduct(products.produto11);
+        break;
+    case 'produto12':
+        displayProduct(products.produto12);
+        break;
+    case 'produto13':
+        displayProduct(products.produto13);
+        break;
+    case 'produto14':
+        displayProduct(products.produto14);
+        break;
+    case 'produto15':
+        displayProduct(products.produto15);
+        break;
+    case 'produto16':
+        displayProduct(products.produto16);
+        break;
+    case 'produto17':
+        displayProduct(products.produto17);
+        break;
+    case 'produto18':
+        displayProduct(products.produto18);
+        break;
+    case 'produto19':
+        displayProduct(products.produto19);
+        break;
+    case 'produto20':
+        displayProduct(products.produto20);
+        break;
+    case 'produto21':
+        displayProduct(products.produto21);
+        break;
+    case 'produto22':
+        displayProduct(products.produto22);
+        break;
+    case 'produto23':
+        displayProduct(products.produto23);
+        break;
+    case 'produto24':
+        displayProduct(products.produto24);
+        break;
+    case 'produto25':
+        displayProduct(products.produto25);
+        break;
                 default:
                     document.getElementById('product-info').innerHTML = '<p>Produto não encontrado.</p>';
             }
         }
 
-        // Função para exibir o produto
+        // Função para exibir o produto e preencher a tabela
         function displayProduct(product) {
+            // Nome do produto
             document.getElementById('product-name').innerText = product.nome;
+            
+            // Imagem do produto
             document.getElementById('product-image').style.backgroundImage = `url('${product.imagem}')`;
-            document.getElementById('product-description').innerHTML = product.descricao;
+            
+            // Preencher a tabela com as informações do produto
+            let descriptionHTML = '';
+            product.descricao.forEach(info => {
+                descriptionHTML += `<tr><th>${info.label}</th><td>${info.value}</td></tr>`;
+            });
+            document.getElementById('product-description').innerHTML = descriptionHTML;
+
+            // Imagem da unidade do produto
             document.getElementById('unit-image').src = product.unidade;
         }
 

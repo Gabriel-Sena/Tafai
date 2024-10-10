@@ -1,3 +1,4 @@
+/* Importa o estilo global */
 @import url(../global.css);
 
 body {
@@ -19,30 +20,60 @@ h1 {
 .product-container {
     display: flex;
     flex: 1; /* Ocupa o espaço restante */
+    padding: 20px;
 }
 
 .product-image {
     flex: 1;
-    background-size: cover;
+    background-size: contain; /* Ajusta a imagem para caber na área sem cortar */
     background-position: center;
+    background-repeat: no-repeat;
+    max-width: 50%; /* Define o tamanho máximo da imagem para evitar rolagem */
+    margin-right: 5%; /* Espaço entre a imagem e as informações */
 }
 
 .product-info {
     flex: 1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.product-description {
-    flex: 1; /* Para ocupar o espaço acima da imagem da unidade */
+.product-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove os espaços entre bordas das células */
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ccc; /* Borda fina para as células */
+    padding: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.product-table th {
+    background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
+    font-weight: bold;
 }
 
 .unit-image {
-    margin-top: 20px; /* Espaçamento acima da imagem da unidade */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+    margin: 20px auto 0 auto; /* Centraliza a imagem horizontalmente e adiciona uma margem superior */
+    width: 150px; /* Define a largura da imagem */
 }
 
 .button-container {
     text-align: center; /* Centraliza o botão */
     margin: 20px 0;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #9b0606;
 }
