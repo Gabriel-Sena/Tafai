@@ -15,6 +15,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 10px 0;
+  border-top: 2px solid #ccc;  /* Opcional: borda superior no menu */
   /*border-top: px solid #ccc; Opcional: borda superior no menu */
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
