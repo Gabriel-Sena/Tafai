@@ -32,14 +32,14 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-bottom: 5px;
+  margin-left: 0.6%;
+  margin-right: 2.8%;
   margin-top: 5px;
 }
 
 .fotos-local img {
   width: 25%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0px;
 }

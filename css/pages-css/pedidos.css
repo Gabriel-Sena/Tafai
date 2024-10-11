@@ -1,1 +1,114 @@
 @import url(../global.css);
+/* Estilos Globais */
+
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+/* Ajuste do Grid */
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Estilização para alinhamento dos labels */
+.linha label {
+    display: flex;
+    align-items: center; /* Alinha o label verticalmente ao centro */
+    width: 120px; /* Largura uniforme para todos os labels */
+    font-weight: bold;
+    margin-right: 10px; /* Espaçamento à direita para distanciar o campo do rótulo anterior */
+}
+
+.linha input, .linha select {
+    width: calc(100% - 130px); /* Ajuste para o input ficar ao lado do label */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px; /* Reduzido o espaço à direita dos campos */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+table td input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table td input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.valorTotal {
+    font-weight: bold;
+    color: #333;
+}
+
+#retirada {
+    margin-right: 10px;
+}
+
+#valorTotalCompra {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #9e0000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column; /* No celular, coloca os campos em coluna */
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
