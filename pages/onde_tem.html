@@ -8,6 +8,536 @@
 </head>
 <body>
   <div class="">
+    <h1>Onde encontrar os produtos representados pela TAFAí... São Paulo e Litoral Paulista</h1>
+    
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Pesquisar estabelecimento...">
+      <button onclick="searchEstablishments()">Buscar</button>
+  </div>
+
+  <div class="zona" onclick="toggleZona('leste')">Zona Leste <span class="arrow">▼</span></div>
+  <div id="leste" class="tabela-estabelecimentos">
+      <table>
+          <tr>
+              <td><a href="https://www.google.com/maps/search/COMERCIAL MIX ESTACAO R PIRACICABA, 227 - VILA MONTE BELO - ITAQUAQUECETUBA" target="_blank">COMERCIAL MIX ESTACAO R PIRACICABA, 227 - VILA MONTE BELO - ITAQUAQUECETUBA</a></td>
+              <td><a href="https://www.google.com/maps/search/EMPORIUM MIMURA RUA BENDIAPA, 97 - CHACARA SANTO ANTONIO" target="_blank">EMPORIUM MIMURA RUA BENDIAPA, 97 - CHACARA SANTO ANTONIO</a></td>
+              <td><a href="https://www.google.com/maps/search/MERCADO DO PARK RUA SANTA ROSA DE LIMA,874 - PARQUE PAULISTANO" target="_blank">MERCADO DO PARK RUA SANTA ROSA DE LIMA,874 - PARQUE PAULISTANO</a></td>
+              <td><a href="https://www.google.com/maps/search/MAIS BOM VIZINHO MERCADO AV INAJA-GUACU, 570 - VILA PROGRESSO" target="_blank">MAIS BOM VIZINHO MERCADO AV INAJA-GUACU, 570 - VILA PROGRESSO</a></td>
+              <td><a href="https://www.google.com/maps/search/SUPERMERCADO MATHUR AV TEODORO BERNARDO DO NASCIMENTO, 1564 - JARDIM ROBRU" target="_blank">SUPERMERCADO MATHUR AV TEODORO BERNARDO DO NASCIMENTO, 1564 - JARDIM ROBRU</a></td>
+              <td><a href="https://www.google.com/maps/search/COMERCIO YPE ROXO AV IPE ROXO, 777 - JARDIM JARAGUA (ITAIM PAULISTA)" target="_blank">COMERCIO YPE ROXO AV IPE ROXO, 777 - JARDIM JARAGUA (ITAIM PAULISTA)</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/COM. SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R FRANCISCO ANTONIO MEIRA, 700 - JARDIM MAIA" target="_blank">COM. SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R FRANCISCO ANTONIO MEIRA, 700 - JARDIM MAIA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO ITHA EST DOM JOAO NERY, 318 - VILA SILVA TELES" target="_blank">MERCADO ITHA EST DOM JOAO NERY, 318 - VILA SILVA TELES</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO SINHA MOCA R LOURENCO FRANCO DO PRADO, S/N - JARDIM NELIA" target="_blank">MERCADO SINHA MOCA R LOURENCO FRANCO DO PRADO, S/N - JARDIM NELIA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO PAULO CESAR ROCHA DE SOUZA R MANOEL LEMES DA SILVA, 380 - JARDIM DAS OLIVEIRAS" target="_blank">MERCADINHO PAULO CESAR ROCHA DE SOUZA R MANOEL LEMES DA SILVA, 380 - JARDIM DAS OLIVEIRAS</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO BIRA R ITAJUIBE, 1030 - JARDIM NELIA" target="_blank">MERCADO BIRA R ITAJUIBE, 1030 - JARDIM NELIA</a></td>
+            <td><a href="https://www.google.com/maps/search/FLAMINGO MINIMERCADO PADARIA AVENIDA FLAMINGO, 339 - VILA NOVA CURUCA" target="_blank">FLAMINGO MINIMERCADO PADARIA AVENIDA FLAMINGO, 339 - VILA NOVA CURUCA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO CURUCA VELHA AV FLAMINGO, 1500 - SAO MIGUEL PAULISTA" target="_blank">MERCADINHO CURUCA VELHA AV FLAMINGO, 1500 - SAO MIGUEL PAULISTA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCEARIA ANTONIO DAVINO DA SILVA AVENIDA JOAO BATISTA SANTIAGO,608 - SAO MIGUEL PAULISTA" target="_blank">MERCEARIA ANTONIO DAVINO DA SILVA AVENIDA JOAO BATISTA SANTIAGO,608 - SAO MIGUEL PAULISTA</a></td>
+            <td><a href="https://www.google.com/maps/search/COMERCIAL MIX AZUL AV PROF ALIPIO DE BARROS, 524 - JARDIM MAIA" target="_blank">COMERCIAL MIX AZUL AV PROF ALIPIO DE BARROS, 524 - JARDIM MAIA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO ERMOLAN MARGARIDA C DE ALBUQUERQUE,69 - JD LAURA" target="_blank">SUPERMERCADO ERMOLAN MARGARIDA C DE ALBUQUERQUE,69 - JD LAURA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO E MERCEARIA R C CURVELO R DOMINGOS FERNANDES NOBRE, 707 - VILA ITAIM" target="_blank">MERCADO E MERCEARIA R C CURVELO R DOMINGOS FERNANDES NOBRE, 707 - VILA ITAIM</a></td>
+            <td><a href="https://www.google.com/maps/search/MASTER ALIMENTOS R PEDROSO DA SILVA, 659 - PARQUE PAULISTANO" target="_blank">MASTER ALIMENTOS R PEDROSO DA SILVA, 659 - PARQUE PAULISTANO</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO NOVA LIDERANÇA RUA DOUTOR FRANCISCO SOARES MARIALVA, 925 - MOGI DAS CRUZES - SUZANO" target="_blank">SUPERMERCADO NOVA LIDERANÇA RUA DOUTOR FRANCISCO SOARES MARIALVA, 925 - MOGI DAS CRUZES - SUZANO</a></td>
+            <td><a href="https://www.google.com/maps/search/MEGA DIAS SUPERMERCADOS AV CONCEICAO, 3072 - VILA MARIA" target="_blank">MEGA DIAS SUPERMERCADOS AV CONCEICAO, 3072 - VILA MARIA</a></td>
+            <td><a href="https://www.google.com/maps/search/ALIADOS 2 SUPERMERCADO R SEGUNDO-SARGENTO ASSAD FERES, N35 - PARQUE NOVO MUNDO" target="_blank">ALIADOS 2 SUPERMERCADO R SEGUNDO-SARGENTO ASSAD FERES, N35 - PARQUE NOVO MUNDO</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO ALIANCA R JOSE DE ALMEIDA, N801 - VILA MEDEIROS" target="_blank">SUPERMERCADO ALIANCA R JOSE DE ALMEIDA, N801 - VILA MEDEIROS</a></td>
+            <td><a href="https://www.google.com/maps/search/TREMBALA COMERCIO DE DOCES AV NOSSA SENHORA DO LORETO, 600 - VILA MEDEIROS" target="_blank">TREMBALA COMERCIO DE DOCES AV NOSSA SENHORA DO LORETO, 600 - VILA MEDEIROS</a></td>
+            <td><a href="https://www.google.com/maps/search/F.M.E. MATSUO ALAMEDA YAYA, 696 - JARDIM AIDA - GUARULHOS" target="_blank">F.M.E. MATSUO ALAMEDA YAYA, 696 - JARDIM AIDA - GUARULHOS</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADO PICANCO R SANTO CRISTO, 60 - VILA FIUZA - GUARULHOS" target="_blank">MERCADO PICANCO R SANTO CRISTO, 60 - VILA FIUZA - GUARULHOS</a></td>
+            <td><a href="https://www.google.com/maps/search/EKO SUPERMERCADO AV ANTONELO DA MESSINA,1526 - SITIO DO PIQUERI" target="_blank">EKO SUPERMERCADO AV ANTONELO DA MESSINA,1526 - SITIO DO PIQUERI</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCEARIA ALCILENE VENANCIO FIGUEIREDO AVENIDA ANTONELO DA MESSINA, 1221 - VL PAULISTANA" target="_blank">MERCEARIA ALCILENE VENANCIO FIGUEIREDO AVENIDA ANTONELO DA MESSINA, 1221 - VL PAULISTANA</a></td>
+            <td><a href="https://www.google.com/maps/search/NMM DOCES R FRANCISCO BRUNO, 245 - VILA MARIZA MAZZEI" target="_blank">NMM DOCES R FRANCISCO BRUNO, 245 - VILA MARIZA MAZZEI</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO SUPREMO PARQUE NOVO MUNDO AV JOSE MARIA FERNANDES,328 - PARQUE NOVO MUNDO" target="_blank">MERCADO SUPREMO PARQUE NOVO MUNDO AV JOSE MARIA FERNANDES,328 - PARQUE NOVO MUNDO</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO ALIANCA R JOSE DE ALMEIDA,801 - VILA MEDEIROS" target="_blank">SUPERMERCADO ALIANCA R JOSE DE ALMEIDA,801 - VILA MEDEIROS</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCEARIA KATAYAMA AV ROLAND GARROS, 572 - JARDIM BRASIL" target="_blank">MERCEARIA KATAYAMA AV ROLAND GARROS, 572 - JARDIM BRASIL</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADOS JARAGUA AV DOUTOR TIMOTEO PENTEADO, 3461 - VILA GALVAO - GUARULHOS" target="_blank">SUPERMERCADOS JARAGUA AV DOUTOR TIMOTEO PENTEADO, 3461 - VILA GALVAO - GUARULHOS</a></td>
+            <td><a href="https://www.google.com/maps/search/DISTR. ATLANTA COMERCIO ATAC. VAREJ. DE DOCES AV ESPERANCA, 520 - VILA PROGRESSO - GUARULHOS,	" target="_blank">DISTR. ATLANTA COMERCIO ATAC. VAREJ. DE DOCES AV ESPERANCA, 520 - VILA PROGRESSO - GUARULHOS</a></td>
+            <td><a href="https://www.google.com/maps/search/ALCILENE VENANCIO FIGUEIREDO AVENIDA ANTONELO DA MESSINA, 1221 - VL PAULISTANA" target="_blank">ALCILENE VENANCIO FIGUEIREDO AVENIDA ANTONELO DA MESSINA, 1221 - VL PAULISTANA</a></td>
+            <td><a href="https://www.google.com/maps/search/JAROVALE SUPERMERCADO AVENIDA ANTONIO ESTEVAO DE CARVALHO, 1532 - CIDADE PATRIARCA" target="_blank">JAROVALE SUPERMERCADO AVENIDA ANTONIO ESTEVAO DE CARVALHO, 1532 - CIDADE PATRIARCA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO ESTRELA AZUL PC PORTO FERREIRA, 48 - VL GUILHERMINA" target="_blank">SUPERMERCADO ESTRELA AZUL PC PORTO FERREIRA, 48 - VL GUILHERMINA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/PERENNE SUPERMERCADO JD. HERCILIA RUA PALMEIRINA,79 - CIDADE PATRIARCA" target="_blank">PERENNE SUPERMERCADO JD. HERCILIA RUA PALMEIRINA,79 - CIDADE PATRIARCA</a></td>
+            <td><a href="https://www.google.com/maps/search/M M FEITOZA DA SILVA MINI MERCADO R RAIMUNDO MACHADO, 50 - PONTE RASA" target="_blank">M M FEITOZA DA SILVA MINI MERCADO R RAIMUNDO MACHADO, 50 - PONTE RASA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO PARANAGUA R MIGUEL RACHID, 394 - VILA PARANAGUA" target="_blank">MERCADO PARANAGUA R MIGUEL RACHID, 394 - VILA PARANAGUA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO BELUTHARE AV TENENTE LAUDELINO FERREIRA DO AMARAL,360 - SAO MIGUEL PAULISTA" target="_blank">MERCADINHO BELUTHARE AV TENENTE LAUDELINO FERREIRA DO AMARAL,360 - SAO MIGUEL PAULISTA</a></td>
+            <td><a href="https://www.google.com/maps/search/S. P. ERMELINO COMERCIO DE ALIMENTOS RUA LUIZ CORRO, 7 - JARDIM VERONIA	" target="_blank">S. P. ERMELINO COMERCIO DE ALIMENTOS RUA LUIZ CORRO, 7 - JARDIM VERONIA	</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO KERALUX RUA BISPO MARTINS, 04 - JD KERALUX" target="_blank">SUPERMERCADO KERALUX RUA BISPO MARTINS, 04 - JD KERALUX</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/COMERCIO DE DOCES AMADOR EST IGUATEMI, 4980, Nº - -" target="_blank">COMERCIO DE DOCES AMADOR EST IGUATEMI, 4980, Nº - -</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO LLY AVENIDA DA BARREIRA GRANDE, 2345 - Vila Bancária" target="_blank">SUPERMERCADO LLY AVENIDA DA BARREIRA GRANDE, 2345 - Vila Bancária</a></td>
+            <td><a href="https://www.google.com/maps/search/XINMEI MERCADINHO R LUIS PINTO, 371 - VILA CARRAO" target="_blank">XINMEI MERCADINHO R LUIS PINTO, 371 - VILA CARRAO</a></td>
+            <td><a href="https://www.google.com/maps/search/EMPORIO PRACA DAS CANARIAS PC DAS CANARIAS, S/N. - VILA FORMOSA" target="_blank">EMPORIO PRACA DAS CANARIAS PC DAS CANARIAS, S/N. - VILA FORMOSA</a></td>
+            <td><a href="https://www.google.com/maps/search/MINI MERCADO E HORTIFRUT COLORADO AV DA BARREIRA GRANDE, 941 - JARDIM COLORADO" target="_blank">MINI MERCADO E HORTIFRUT COLORADO AV DA BARREIRA GRANDE, 941 - JARDIM COLORADO</a></td>
+            <td><a href="https://www.google.com/maps/search/EMPORIO E CONVENIENCIA YURI R SOLIDONIO LEITE, 2378 - VILA IVONE" target="_blank">EMPORIO E CONVENIENCIA YURI R SOLIDONIO LEITE, 2378 - VILA IVONE</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO MAZZI R SOLIDONIO LEITE,2300 - VILA IVONE" target="_blank">MERCADINHO MAZZI R SOLIDONIO LEITE,2300 - VILA IVONE</a></td>
+            <td><a href="https://www.google.com/maps/search/MINI MERCADO E HORTIFRUT AVENIDA SAPOPEMBA, 6601 - VILA PRIMAVERA" target="_blank">EMINI MERCADO E HORTIFRUT AVENIDA SAPOPEMBA, 6601 - VILA PRIMAVERA</a></td>
+            <td><a href="https://www.google.com/maps/search/MENSORE SUGAR COM. VAREJ. DE PRODUTOS ALIMENTICIOS AV SAPOPEMBA, 2656 - VILA SANTA CLARA" target="_blank">MENSORE SUGAR COM. VAREJ. DE PRODUTOS ALIMENTICIOS AV SAPOPEMBA, 2656 - VILA SANTA CLARA</a></td>
+            <td><a href="https://www.google.com/maps/search/LATICINIOS E BOMBONIERI MARTINS R PADRE MAURICIO, 11 - VL STA CLARA" target="_blank">LATICINIOS E BOMBONIERI MARTINS R PADRE MAURICIO, 11 - VL STA CLARA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO DA HORA RUA DR CARLOS SIGNORELLI, 178 - VILA DIVA" target="_blank">MERCADO DA HORA RUA DR CARLOS SIGNORELLI, 178 - VILA DIVA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCEARIA SEIKO PRAÇA SAO LUIS DO CURU, 23 - VILA INVERNADA" target="_blank">MERCEARIA SEIKO PRAÇA SAO LUIS DO CURU, 23 - VILA INVERNADA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO LLY AV BARREIRA GRANDE, 1.679 - JD. COLORADO" target="_blank">SUPERMERCADO LLY AV BARREIRA GRANDE, 1.679 - JD. COLORADO</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO SUPREMO R MOSENHOR ANTONIO DE CASTRO, 638 - VILA FORMOSA" target="_blank">MERCADO SUPREMO R MOSENHOR ANTONIO DE CASTRO, 638 - VILA FORMOSA</a></td>
+            <td><a href="https://www.google.com/maps/search/MINI MERCADO E HORTIFRUT COLORADO AV DA BARREIRA GRANDE, 941 - JARDIM COLORADO" target="_blank">MINI MERCADO E HORTIFRUT COLORADO AV DA BARREIRA GRANDE, 941 - JARDIM COLORADO</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCEARIA ESCADINHA AV SAPOPEMBA, 3075 - VILA DIVA" target="_blank">MERCEARIA ESCADINHA AV SAPOPEMBA, 3075 - VILA DIVA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO GOLDEN R DOUTOR GABRIEL DE RESENDE, 466 - VILA INVERNADA" target="_blank">SUPERMERCADO GOLDEN R DOUTOR GABRIEL DE RESENDE, 466 - VILA INVERNADA</a></td>
+            <td><a href="https://www.google.com/maps/search/MENSORE SUGAR COM. VAREJ. DE PRODUTOS ALIMENTICIOS AV SAPOPEMBA, 2656 - VILA SANTA CLARA" target="_blank">MENSORE SUGAR COM. VAREJ. DE PRODUTOS ALIMENTICIOS AV SAPOPEMBA, 2656 - VILA SANTA CLARA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADO DA HORA RUA DR CARLOS SIGNORELLI, 178 - VILA DIVA" target="_blank">MERCADO DA HORA RUA DR CARLOS SIGNORELLI, 178 - VILA DIVA</a></td>
+            <td><a href="https://www.google.com/maps/search/CALVO COMERCIO E IMPORTACAO AV RIO DAS PEDRAS, 2118 - VL NOVA YORK" target="_blank">CALVO COMERCIO E IMPORTACAO AV RIO DAS PEDRAS, 2118 - VL NOVA YORK</a></td>
+            <td><a href="https://www.google.com/maps/search/EMPORIO PRACA DAS CANARIAS PC DAS CANARIAS, Nº S/N. - VILA FORMOSA" target="_blank">EMPORIO PRACA DAS CANARIAS PC DAS CANARIAS, Nº S/N. - VILA FORMOSA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO HAPPY FAMILIA R VILELA, 782 - TATUAPE" target="_blank">MERCADO HAPPY FAMILIA R VILELA, 782 - TATUAPE</a></td>
+            <td><a href="https://www.google.com/maps/search/ADEGA COMERCIAL FALCAO" target="_blank">ADEGA COMERCIAL FALCAO</a></td>
+            <td><a href="https://www.google.com/maps/search/SALGADOCE FESTA R FERNANDO FALCAO, 325 - ALTO DA MOOCA" target="_blank">SALGADOCE FESTA R FERNANDO FALCAO, 325 - ALTO DA MOOCA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO FUXING R DA MOOCA, 3403 - MOOCA" target="_blank">MERCADINHO FUXING R DA MOOCA, 3403 - MOOCA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADOS PRECO IDEAL R TUIUTI, 904 - TATUAPE" target="_blank">SUPERMERCADOS PRECO IDEAL R TUIUTI, 904 - TATUAPE</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO BONS AMIGOS R TUIUTI,1229 - TATUAPE" target="_blank">MERCADO BONS AMIGOS R TUIUTI,1229 - TATUAPE</a></td>
+            <td><a href="https://www.google.com/maps/search/HORTIFRUTI CELSO GARCIA AV CELSO GARCIA, 4800 - TATUAPE" target="_blank">HORTIFRUTI CELSO GARCIA AV CELSO GARCIA, 4800 - TATUAPE</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO BOM DA MOOCA R DA MOOCA, 1223 - MOOCA" target="_blank">MERCADINHO BOM DA MOOCA R DA MOOCA, 1223 - MOOCA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO BOM DIA AV BENTO GUELFI, 203 - JARDIM ALTO ALEGRE (SAO RAFAEL)" target="_blank">MERCADO BOM DIA AV BENTO GUELFI, 203 - JARDIM ALTO ALEGRE (SAO RAFAEL)</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MAZARO ROZETTI DOCES - COMERCIAL DE ALIMENTOS AV MATEO BEI, 974 - SAO MATEUS" target="_blank">MAZARO ROZETTI DOCES - COMERCIAL DE ALIMENTOS AV MATEO BEI, 974 - SAO MATEUS</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO CENTRAL DE SAO MATEUS AVENIDA MATEO BEI, 1925 - CIDADE SAO MATEUS" target="_blank">MERCADINHO CENTRAL DE SAO MATEUS AVENIDA MATEO BEI, 1925 - CIDADE SAO MATEUS</a></td>
+            <td><a href="https://www.google.com/maps/search/PADARIA E MERCADO COMPRE MAIS MR R NEBULOSAS, 378 - CIDADE SATELITE SANTA BARBARA" target="_blank">PADARIA E MERCADO COMPRE MAIS MR R NEBULOSAS, 378 - CIDADE SATELITE SANTA BARBARA</a></td>
+            <td><a href="https://www.google.com/maps/search/MANOEL ALISSON RODRIGUES 02283661439 RUA MARCOS GONCALVES CORREA, 456 - JARDIM VILA CARRAO" target="_blank">MANOEL ALISSON RODRIGUES 02283661439 RUA MARCOS GONCALVES CORREA, 456 - JARDIM VILA CARRAO</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO KYOEI AVENIDA BARONESA DE MURITIBA, 1020 - PQUE SAO RAFAEL" target="_blank">MERCADINHO KYOEI AVENIDA BARONESA DE MURITIBA, 1020 - PQUE SAO RAFAEL</a></td>
+            <td><a href="https://www.google.com/maps/search/TANIA DE OLIVEIRA - MERCADO Avenida Baronesa de Muritiba, 536 - Parque São Rafael" target="_blank">TANIA DE OLIVEIRA - MERCADO Avenida Baronesa de Muritiba, 536 - Parque São Rafael</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/DIAMANTINO DA MOTA DOS SANTOS MERCADINHO RUA ANA CLARA, 376 - VILA MENDES" target="_blank">DIAMANTINO DA MOTA DOS SANTOS MERCADINHO RUA ANA CLARA, 376 - VILA MENDES</a></td>
+            <td><a href="https://www.google.com/maps/search/CACHOEIRA COMERCIO DE PRODUTOS ALIMENTICIOS RUA BATISTA FERGUSIO, 947 - VILA CARDOSO FRANCO" target="_blank">CACHOEIRA COMERCIO DE PRODUTOS ALIMENTICIOS RUA BATISTA FERGUSIO, 947 - VILA CARDOSO FRANCO</a></td>
+            <td><a href="https://www.google.com/maps/search/MINI MERCADO NAKANISHI R ANA CLARA,101 - VILA MENDES" target="_blank">MINI MERCADO NAKANISHI R ANA CLARA,101 - VILA MENDES</a></td>
+            <td><a href="https://www.google.com/maps/search/RBV SUPERMERCADO AV DOS NACIONALISTAS, 330 - JARDIM TANGO" target="_blank">RBV SUPERMERCADO AV DOS NACIONALISTAS, 330 - JARDIM TANGO</a></td>
+            <td><a href="https://www.google.com/maps/search/FUTARI COMERCIAL DE ALIMENTOS R SAO FLORENCIO, 1058 - CANGAIBA" target="_blank">FUTARI COMERCIAL DE ALIMENTOS R SAO FLORENCIO, 1058 - CANGAIBA</a></td>
+            <td><a href="https://www.google.com/maps/search/SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R ANTONIO CARLOS MINGUES LOPES, 1556 - CONJUNTO HABITACIONAL SITIO CONCEICAO" target="_blank">SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R ANTONIO CARLOS MINGUES LOPES, 1556 - CONJUNTO HABITACIONAL SITIO CONCEICAO</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R ANTONIO CARLOS MINGUES LOPES, 1556 - CONJUNTO HABITACIONAL SITIO CONCEICAO" target="_blank">SAULO WANDERLEY DIAS DOS SANTOS MINIMERCADO R ANTONIO CARLOS MINGUES LOPES, 1556 - CONJUNTO HABITACIONAL SITIO CONCEICAO</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADO BOM DIA AV BENTO GUELFI, 203 - JARDIM ALTO ALEGRE (SAO RAFAEL)" target="_blank">MERCADO BOM DIA AV BENTO GUELFI, 203 - JARDIM ALTO ALEGRE (SAO RAFAEL)</a></td>
+            <td><a href="https://www.google.com/maps/search/PADARIA E MERCADO LEVE MAIS E PAGUE MENOS AVENIDA CLAUDIO AUGUSTO FERNANDES,300 - SAO MATEUS" target="_blank">PADARIA E MERCADO LEVE MAIS E PAGUE MENOS AVENIDA CLAUDIO AUGUSTO FERNANDES,300 - SAO MATEUS</a></td>
+            <td><a href="https://www.google.com/maps/search/MAIS BOM VIZINHO MERCADO AV INAJA-GUACU, 570 - VILA PROGRESSO" target="_blank">MAIS BOM VIZINHO MERCADO AV INAJA-GUACU, 570 - VILA PROGRESSO</a></td>
+            <td><a href="https://www.google.com/maps/search/DIAMANTINO DA MCACHOEIRA COMERCIO DE PRODUTOS ALIMENTICIOS RUA BATISTA FERGUSIO, 947" target="_blank">DIAMANTINO DA MCACHOEIRA COMERCIO DE PRODUTOS ALIMENTICIOS RUA BATISTA FERGUSIO, 947</a></td>
+            <td><a href="https://www.google.com/maps/search/VILA CARDOSO FRANCOOTA DOS SANTOS MERCADINHO RUA ANA CLARA, 376 - VILA MENDES" target="_blank">VILA CARDOSO FRANCOOTA DOS SANTOS MERCADINHO RUA ANA CLARA, 376 - VILA MENDES</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/PADARIA E MERCADO LEVE MAIS E PAGUE MENOS AVENIDA CLAUDIO AUGUSTO FERNANDES, 300 - SAO MATEUS" target="_blank">PADARIA E MERCADO LEVE MAIS E PAGUE MENOS AVENIDA CLAUDIO AUGUSTO FERNANDES, 300 - SAO MATEUS</a></td>
+            <td><a href="https://www.google.com/maps/search/MANOEL ALISSON RODRIGUES ( REY DO CARRAO ) RUA MARCOS GONCALVES CORREA, 456 - JARDIM VILA CARRAO" target="_blank">MANOEL ALISSON RODRIGUES ( REY DO CARRAO ) RUA MARCOS GONCALVES CORREA, 456 - JARDIM VILA CARRAO</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO ASTROX AV SAPOPEMBA, 15602 - CIDADE SATELITE SANTA BARBARA" target="_blank">SUPER MERCADO ASTROX AV SAPOPEMBA, 15602 - CIDADE SATELITE SANTA BARBARA</a></td>
+            <td><a href="https://www.google.com/maps/search/W S FERREIRA - MINIMERCADO TRAVESSA FRANCISCO MANARA, 80 - JARDIM LIMOEIRO" target="_blank">W S FERREIRA - MINIMERCADO TRAVESSA FRANCISCO MANARA, 80 - JARDIM LIMOEIRO</a></td>
+            <td><a href="https://www.google.com/maps/search/EMPORIO DE DOCES NINO AV VALDEMAR CARLOS PEREIRA,729 - VILA DALILA" target="_blank">EMPORIO DE DOCES NINO AV VALDEMAR CARLOS PEREIRA,729 - VILA DALILA</a></td>
+            <td><a href="https://www.google.com/maps/search/HORTIFRUTI DO PARQUE R VENANCIO LISBOA, 425 - JD. N. S. DO CARMO" target="_blank">HORTIFRUTI DO PARQUE R VENANCIO LISBOA, 425 - JD. N. S. DO CARMO</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO DO CARMO R HARRY DANHENBERG, 1220 - VILA CARMOSINA" target="_blank">SUPERMERCADO DO CARMO R HARRY DANHENBERG, 1220 - VILA CARMOSINA</a></td>
+            <td><a href="https://www.google.com/maps/search/MARIA DA PAZ YAMAMOTO R PROFESSOR LEONCIO GURGEL, 401 - JARDIM SAO PEDRO" target="_blank">MARIA DA PAZ YAMAMOTO R PROFESSOR LEONCIO GURGEL, 401 - JARDIM SAO PEDRO</a></td>
+            <td><a href="https://www.google.com/maps/search/ANDREA BARROS MONDINI MERCADO RUA RIO CANABRAVA, 392 - ITAQUERA" target="_blank">ANDREA BARROS MONDINI MERCADO RUA RIO CANABRAVA, 392 - ITAQUERA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO KING WEI RUA SANTA ETELVINA,267 - JARDIM SANTA TEREZINHA" target="_blank">MERCADINHO KING WEI RUA SANTA ETELVINA,267 - JARDIM SANTA TEREZINHA</a></td>
+            <td><a href="https://www.google.com/maps/search/MERCADINHO ADL ESTRADA DOM JOAO NERY, 4267 - JARDIM BARTIRA" target="_blank">MERCADINHO ADL ESTRADA DOM JOAO NERY, 4267 - JARDIM BARTIRA</a></td>
+            <td><a href="https://www.google.com/maps/search/EMPORIO 7 PRODUTOS ALIMENTICIOS R TREVO DE SANTA MARIA, 517 - PARQUE GUARANI" target="_blank">EMPORIO 7 PRODUTOS ALIMENTICIOS R TREVO DE SANTA MARIA, 517 - PARQUE GUARANI</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/COMERCIAL JARDIM BRASILIA PC VALDEMAR BASSI, 13 - JD BRASILIA" target="_blank">COMERCIAL JARDIM BRASILIA PC VALDEMAR BASSI, 13 - JD BRASILIA</a></td>
+            <td><a href="https://www.google.com/maps/search/VIANNA SUPERMERCADO AV WALDEMAR CARLOS PEREIRA, 523 - VILA TALARICO" target="_blank">VIANNA SUPERMERCADO AV WALDEMAR CARLOS PEREIRA, 523 - VILA TALARICO</a></td>
+            <td><a href="https://www.google.com/maps/search/BENGALA SUPERMERCADO AV LIDER,1721 - CIDADE LIDER" target="_blank">BENGALA SUPERMERCADO AV LIDER,1721 - CIDADE LIDER</a></td>
+            <td><a href="https://www.google.com/maps/search/VIANNA SUPERMERCADO AV WALDEMAR CARLOS PEREIRA, 341 - VILA TALARICO" target="_blank">VIANNA SUPERMERCADO AV WALDEMAR CARLOS PEREIRA, 341 - VILA TALARICO</a></td>
+            <td><a href="https://www.google.com/maps/search/HORTIFRUTI DO PARQUE R VENANCIO LISBOA, 425 - JD. N. S. DO CARMO" target="_blank">HORTIFRUTI DO PARQUE R VENANCIO LISBOA, 425 - JD. N. S. DO CARMO</a></td>
+            <td><a href="https://www.google.com/maps/search/LANCHONETE E MERCEARIA SANTOS & BADU R OTELO AUGUSTO RIBEIRO, 772 - GUAIANAZES" target="_blank">LANCHONETE E MERCEARIA SANTOS & BADU R OTELO AUGUSTO RIBEIRO, 772 - GUAIANAZES</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/MERCADO NOVA GERACAO BELEM R DR. CLEMENTINO, 433 - BELEM" target="_blank">MERCADO NOVA GERACAO BELEM R DR. CLEMENTINO, 433 - BELEM</a></td>
+            <td><a href="https://www.google.com/maps/search/LINGYUN HE R MARQUES DE ABRANTES, 488 - CHACARA TATUAPE" target="_blank">LINGYUN HE R MARQUES DE ABRANTES, 488 - CHACARA TATUAPE</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPERMERCADO AGATE CASA VERDE R ZILDA, 890 - CASA VERDE" target="_blank">SUPERMERCADO AGATE CASA VERDE R ZILDA, 890 - CASA VERDE</a></td>
+            <td><a href="https://www.google.com/maps/search/AGATE I R CRISPIM DUARTE, 572 - VILA MEDEIROS" target="_blank">AGATE I R CRISPIM DUARTE, 572 - VILA MEDEIROS</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA A.LACERDA PRACA AMADEU LACERDA, 10 - VILA NHOCUNE" target="_blank">SUPER MERCADO DA PRACA A.LACERDA PRACA AMADEU LACERDA, 10 - VILA NHOCUNE</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA CATAS ALTAS PRACA CATAS ALTAS, 190 - JARDIM PARAGUACU" target="_blank">SUPER MERCADO DA PRACA CATAS ALTAS PRACA CATAS ALTAS, 190 - JARDIM PARAGUACU</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA ESTACAO AV GOVERNADOR JANIO QUADROS, 1258 - PARQUE SAO FRANCISCO - FERRAZ DE VASCONCELOS" target="_blank">SUPER MERCADO DA PRACA ESTACAO AV GOVERNADOR JANIO QUADROS, 1258 - PARQUE SAO FRANCISCO - FERRAZ DE VASCONCELOS</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA TODOS IGUAIS TRAVESSA SOMOS TODOS IGUAIS, 768 - JARDIM DA CONQUISTA" target="_blank">SUPER MERCADO DA PRACA TODOS IGUAIS TRAVESSA SOMOS TODOS IGUAIS, 768 - JARDIM DA CONQUISTA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA CARRAOZINHO AVENIDA BASSANO DEL GRAPPA, 759 - JD VILA CARRAO" target="_blank">SUPER MERCADO DA PRACA CARRAOZINHO AVENIDA BASSANO DEL GRAPPA, 759 - JD VILA CARRAO</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA RODOLFO PIRANI AVENIDA RODOLFO PIRANI, 679 - JARDIM RODOLFO PIRANI" target="_blank">SUPER MERCADO DA PRACA RODOLFO PIRANI AVENIDA RODOLFO PIRANI, 679 - JARDIM RODOLFO PIRANI</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA JD SAPOPEMBA R JOAO LOPES DE LIMA, 1026 - JD SAPOPEMBA" target="_blank">SUPER MERCADO DA PRACA JD SAPOPEMBA R JOAO LOPES DE LIMA, 1026 - JD SAPOPEMBA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA MARIA LUIZA AMERICANO AVENIDA MARIA LUIZA AMERICANO, 250 - ITAQUERA" target="_blank">SUPER MERCADO DA PRACA MARIA LUIZA AMERICANO AVENIDA MARIA LUIZA AMERICANO, 250 - ITAQUERA</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA IBITIRAMA RUA IBITIRAMA, 1.200 - VILA PRUDENTE" target="_blank">SUPER MERCADO DA PRACA IBITIRAMA RUA IBITIRAMA, 1.200 - VILA PRUDENTE</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA PALHETA RUA FRANCISCO DE MELO PALHETA, 260 - PARQUE BOA ESPERANCA" target="_blank">SUPER MERCADO DA PRACA PALHETA RUA FRANCISCO DE MELO PALHETA, 260 - PARQUE BOA ESPERANCA</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA ANA CLARA R ANA CLARA, 109 - VILA MENDES" target="_blank">SUPER MERCADO DA PRACA ANA CLARA R ANA CLARA, 109 - VILA MENDES</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA LIMOEIRO TRAVESSA FRANCISCO MANARA, 80 - JARDIM LIMOEIRO" target="_blank">SUPER MERCADO DA PRACA LIMOEIRO TRAVESSA FRANCISCO MANARA, 80 - JARDIM LIMOEIRO</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA KASHICOI AV BRASIL, 800 - SITIO PAREDAO - FERRAZ DE VASCONCELOS" target="_blank">SUPER MERCADO DA PRACA KASHICOI AV BRASIL, 800 - SITIO PAREDAO - FERRAZ DE VASCONCELOS</a></td>
+            <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA MORRO DAS PEDRAS RUA MORRO DAS PEDRAS, 152 - JARDIM RODOLFO PIRANI" target="_blank">SUPER MERCADO DA PRACA MORRO DAS PEDRAS RUA MORRO DAS PEDRAS, 152 - JARDIM RODOLFO PIRANI</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA HERMELINO RUA ABEL TAVARES, 1149 - JARDIM BELEM" target="_blank">SUPER MERCADO DA PRACA HERMELINO RUA ABEL TAVARES, 1149 - JARDIM BELEM</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA ARTUR ALVIM R DOUTOR CAMPOS MOURA, 118 - PARQUE ARTUR ALVIM" target="_blank">SUPER MERCADO DA PRACA ARTUR ALVIM R DOUTOR CAMPOS MOURA, 118 - PARQUE ARTUR ALVIM</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA MARTINS FONTES R CASTOR, 21 - CIDADE SATELITE SANTA BARBARA" target="_blank">SUPER MERCADO DA PRACA MARTINS FONTES R CASTOR, 21 - CIDADE SATELITE SANTA BARBARA</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA VERIDIANA R DONA VERIDIANA0, 48 - HIGIENOPOLIS" target="_blank">SUPER MERCADO DA PRACA VERIDIANA R DONA VERIDIANA0, 48 - HIGIENOPOLIS</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA CONCEICAO AV CONCEICAO, 4.605 - VILA MARIA" target="_blank">SUPER MERCADO DA PRACA CONCEICAO AV CONCEICAO, 4.605 - VILA MARIA</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA SACOLAO AV GOVERNADOR JANIO QUADROS 1230 - PARQUE SAO FRANCISCO - FERRAZ DE VASCONCELOS" target="_blank">SUPER MERCADO DA PRACA SACOLAO AV GOVERNADOR JANIO QUADROS 1230 - PARQUE SAO FRANCISCO - FERRAZ DE VASCONCELOS</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRAÇA ESTRELA DO PIRANI AV RODOLFO PIRANI, 679 - JARDIM RODOLFO PIRANI" target="_blank">SUPER MERCADO DA PRAÇA ESTRELA DO PIRANI AV RODOLFO PIRANI, 679 - JARDIM RODOLFO PIRANI</a></td>
+          <td><a href="https://www.google.com/maps/search/OURO BRANCO MINI MERCADO R DA PONTE RASA, 942 - JARDIM PONTE RASA" target="_blank">OURO BRANCO MINI MERCADO R DA PONTE RASA, 942 - JARDIM PONTE RASA</a></td>
+          <td><a href="https://www.google.com/maps/search/M M FEITOZA DA SILVA MINI MERCADO R RAIMUNDO MACHADO, 50 - PONTE RASA" target="_blank">M M FEITOZA DA SILVA MINI MERCADO R RAIMUNDO MACHADO, 50 - PONTE RASA</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADINHO BELUTHARE AV TENENTE LAUDELINO FERREIRA DO AMARAL, 360 - SAO MIGUEL PAULISTA" target="_blank">MERCADINHO BELUTHARE AV TENENTE LAUDELINO FERREIRA DO AMARAL, 360 - SAO MIGUEL PAULISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/CALVO COMERCIO E IMPORTACAO AV RIO DAS PEDRAS, 2118 - VL NOVA YORK" target="_blank">CALVO COMERCIO E IMPORTACAO AV RIO DAS PEDRAS, 2118 - VL NOVA YORK</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADINHO PORTO CALVO R LAGO DA MANGUEIRA, 252 - JARDIM DO LAGO - SAO BERNARDO DO CAMPO" target="_blank">MERCADINHO PORTO CALVO R LAGO DA MANGUEIRA, 252 - JARDIM DO LAGO - SAO BERNARDO DO CAMPO</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA (LOJA 03) AV WALDEMAR CARLOS PEREIRA, 76 - VILA TALARICO" target="_blank">SUPER MERCADO CHAMA (LOJA 03) AV WALDEMAR CARLOS PEREIRA, 76 - VILA TALARICO</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA 10 AV RIO DAS PEDRAS, 1176 - JARDIM ARICANDUVA" target="_blank">SUPER MERCADO CHAMA 10 AV RIO DAS PEDRAS, 1176 - JARDIM ARICANDUVA</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA 5 R PASTORIL DE ITAPETINGA, 533 - JARDIM DANFER" target="_blank">SUPER MERCADO CHAMA 5 R PASTORIL DE ITAPETINGA, 533 - JARDIM DANFER</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA CORDEIRO LJ 8 AV OSVALDO VALLE CORDEIRO, 152 - VILA MATILDE" target="_blank">SUPER MERCADO CHAMA CORDEIRO LJ 8 AV OSVALDO VALLE CORDEIRO, 152 - VILA MATILDE</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA UXI LJ 7 R UXI, 43 - JARDIM SANTA MARIA" target="_blank">SUPER MERCADO CHAMA UXI LJ 7 R UXI, 43 - JARDIM SANTA MARIA</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA HAIA (LOJA 02) AV AGUIA DE HAIA, 1718 - PARQUE PAINEIRAS" target="_blank">SUPER MERCADO CHAMA HAIA (LOJA 02) AV AGUIA DE HAIA, 1718 - PARQUE PAINEIRAS</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LOJA 01 AV ANTONIO LOUZADA ANTUNES, 282 - JARDIM PEDRO JOSE NUNES" target="_blank">SUPER MERCADO CHAMA LOJA 01 AV ANTONIO LOUZADA ANTUNES, 282 - JARDIM PEDRO JOSE NUNES</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LJ 13 R CORREGO DO BOM JESUS, 407 - CIDADE CENTENARIO" target="_blank">SUPER MERCADO CHAMA LJ 13 R CORREGO DO BOM JESUS, 407 - CIDADE CENTENARIO</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LOJA 14 RUA EMILIA MARENGO, 140 - VILA REGENTE FEIJO" target="_blank">SUPER MERCADO CHAMA LOJA 14 RUA EMILIA MARENGO, 140 - VILA REGENTE FEIJO</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LJ15 R DO ORATORIO,1166 - MOOCA" target="_blank">SUPER MERCADO CHAMA LJ15 R DO ORATORIO,1166 - MOOCA</a></td>
+        <td><a href="https://www.google.com/maps/search/MERCADO ESQUINA R CHAMANTA, 1061 - VILA PRUDENTE" target="_blank">MERCADO ESQUINA R CHAMANTA, 1061 - VILA PRUDENTE</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LOJA 17 AV JOSE BRUMATTI, 3528 - JARDIM IV CENTENARIO - GUARULHOS" target="_blank">SUPER MERCADO CHAMA LOJA 17 AV JOSE BRUMATTI, 3528 - JARDIM IV CENTENARIO - GUARULHOS</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA LOJA16 R BARAO DE PENEDO, 102 - AGUA RASA" target="_blank">SUPER MERCADO CHAMA LOJA16 R BARAO DE PENEDO, 102 - AGUA RASA</a></td>
+      <td><a href="https://www.google.com/maps/search/MERC. BARALA AV KUMAKI AOKI, 308 - JARDIM HELENA" target="_blank">MERC. BARALA AV KUMAKI AOKI, 308 - JARDIM HELENA</a></td>
+      <td><a href="https://www.google.com/maps/search/MERCADINHO BOM DA MOOCA LTDA R DA MOOCA, 1223 - MOOCA" target="_blank">MERCADINHO BOM DA MOOCA LTDA R DA MOOCA, 1223 - MOOCA</a></td>
+      <td><a href="https://www.google.com/maps/search/MINI MERCADO KOGA AVENIDA VILA EMA, 3567 - VILA EMA" target="_blank">MINI MERCADO KOGA AVENIDA VILA EMA, 3567 - VILA EMA</a></td>
+      <td><a href="" target="_blank"></a></td>
+      <td><a href="" target="_blank"></a></td>
+    </tr>
+      </table>
+  </div>
+
+  <div class="zona" onclick="toggleZona('oeste')">Zona Oeste <span class="arrow">▼</span></div>
+  <div id="oeste" class="tabela-estabelecimentos">
+      <table>
+          <tr>
+              <td><a href="https://www.google.com/maps/search/DONA VERIDIANA PIZZARIA BUFFET E DELIVERY Rua Dona Veridiana, 661 - Higienópolis" target="_blank">DONA VERIDIANA PIZZARIA BUFFET E DELIVERY Rua Dona Veridiana, 661 - Higienópolis</a></td>
+              <td><a href="" target="_blank"></a></td>
+              <td><a href="" target="_blank"></a></td>
+              <td><a href="" target="_blank"></a></td>
+              <td><a href="" target="_blank"></a></td>
+              <td><a href="" target="_blank"></a></td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="zona" onclick="toggleZona('norte')">Zona Norte <span class="arrow">▼</span></div>
+  <div id="norte" class="tabela-estabelecimentos">
+      <table>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/MERCEARIA E PADARIA CRYSTAL LB R DARIO VILARES BARBOSA, 118 - JARDIM PERI" target="_blank">MERCEARIA E PADARIA CRYSTAL LB R DARIO VILARES BARBOSA, 118 - JARDIM PERI</a></td>
+          <td><a href="https://www.google.com/maps/search/DOURADO & SILVA AV DOUTOR MARCIO MUNHOS, 129 - JARDIM TIRO AO POMBO" target="_blank">DOURADO & SILVA AV DOUTOR MARCIO MUNHOS, 129 - JARDIM TIRO AO POMBO</a></td>
+          <td><a href="https://www.google.com/maps/search/COMERCIAL TAKARA PIRITUBA AV ELISIO TEIXEIRA LEITE, 1095 - FREGUESIA DO O" target="_blank">COMERCIAL TAKARA PIRITUBA AV ELISIO TEIXEIRA LEITE, 1095 - FREGUESIA DO O</a></td>
+          <td><a href="https://www.google.com/maps/search/SUPERMERCADO PIRITUBA RUA DR HEITOR NASCIMENTO, 30 - MOINHO VELHO" target="_blank">SUPERMERCADO PIRITUBA RUA DR HEITOR NASCIMENTO, 30 - MOINHO VELHO</a></td>
+          <td><a href="https://www.google.com/maps/search/DOCES PALLOS R CLEMENTE ALVARES, 327 - LAPA" target="_blank">DOCES PALLOS R CLEMENTE ALVARES, 327 - LAPA</a></td>
+          <td><a href="https://www.google.com/maps/search/WRS SUPERMERCADOS R DOUTOR JOY ARRUDA, 40 - VILA ZAT" target="_blank">WRS SUPERMERCADOS R DOUTOR JOY ARRUDA, 40 - VILA ZAT</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/NOSSO LAR SUPERMERCADOS PC SANTA CLARA DE ASSIS, 15 - VILA MONTE ALEGRE" target="_blank">NOSSO LAR SUPERMERCADOS PC SANTA CLARA DE ASSIS, 15 - VILA MONTE ALEGRE</a></td>
+        <td><a href="https://www.google.com/maps/search/NOSSO LAR SUPERMERCADO Avenida Mutinga, 218 - Pirituba" target="_blank">NOSSO LAR SUPERMERCADO Avenida Mutinga, 218 - Pirituba</a></td>
+        <td><a href="https://www.google.com/maps/search/NOSSO LAR SUPERMERCADO AV PAULA FERREIRA, 1552 - PIRITUBA" target="_blank">NOSSO LAR SUPERMERCADO AV PAULA FERREIRA, 1552 - PIRITUBA</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPERMERCADO AGATE CASA VERDE R ZILDA, 890 - CASA VERDE" target="_blank">SUPERMERCADO AGATE CASA VERDE R ZILDA, 890 - CASA VERDE</a></td>
+        <td><a href="https://www.google.com/maps/search/H.D.R. MERCEARIA E PADARIA LTDA / ALIANÇA RUA ANTONIO CARLOS MINGUES LOPES, 1810 - JARDIM BARRO BRANCO II" target="_blank">H.D.R. MERCEARIA E PADARIA LTDA / ALIANÇA RUA ANTONIO CARLOS MINGUES LOPES, 1810 - JARDIM BARRO BRANCO II</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA SABRINA AV MILTON DA ROCHA,168 - VILA SABRINA" target="_blank">SUPER MERCADO DA PRACA SABRINA AV MILTON DA ROCHA,168 - VILA SABRINA</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA CANEDOS RUA CANEDOS, 100" target="_blank">SUPER MERCADO DA PRACA CANEDOS RUA CANEDOS, 100</a></td>
+        <td><a href="" target="_blank"></a></td>
+        <td><a href="" target="_blank"></a></td>
+        <td><a href="" target="_blank"></a></td>
+        <td><a href="" target="_blank"></a></td>
+        <td><a href="" target="_blank"></a></td>
+    </tr>
+      </table>
+  </div>
+
+  <div class="zona" onclick="toggleZona('sul')">Zona Sul <span class="arrow">▼</span></div>
+  <div id="sul" class="tabela-estabelecimentos">
+      <table>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/HORTIFRUTI BOSQUE DA SAUDE - AV PROFESSOR NOE AZEVEDO, 38 - VILA MARIANA" target="_blank">HORTIFRUTI BOSQUE DA SAUDE - AV PROFESSOR NOE AZEVEDO, 38 - VILA MARIANA</a></td>
+          <td><a href="https://www.google.com/maps/search/KOBAIACHI - RUA EDUARDO DE SA,363 - CIDADE ADEMAR" target="_blank">KOBAIACHI - RUA EDUARDO DE SA,363 - CIDADE ADEMAR</a></td>
+          <td><a href="https://www.google.com/maps/search/LUKKA MERCADO - RUA VEMAG, 528 - IPIRANGA" target="_blank">LUKKA MERCADO - RUA VEMAG, 528 - IPIRANGA</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADINHO LAR SERVICE - R TITO OLIANI,601 - SAO JOAO CLIMACO" target="_blank">MERCADINHO LAR SERVICE - R TITO OLIANI,601 - SAO JOAO CLIMACO</a></td>
+          <td><a href="https://www.google.com/maps/search/COMERCIAL JACQUEY - COMERCIO DE BALAS - RUA JACQUEY,183 - VILA HELENA - SAO BERNARDO DO CAMPO" target="_blank">COMERCIAL JACQUEY - COMERCIO DE BALAS - RUA JACQUEY,183 - VILA HELENA - SAO BERNARDO DO CAMPO</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADINHO SHINZE - R ALMEIDA LEME,125 - PARQUE SAO BERNARDO - SAO BERNARDO DO CAMPO" target="_blank">MERCADINHO SHINZE - R ALMEIDA LEME,125 - PARQUE SAO BERNARDO - SAO BERNARDO DO CAMPO</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/SUPERMERCADO KIYOMOTO - ESTRADA DO PEDROSO,1708 - JD VILA RICA - SANTO ANDRE" target="_blank">SUPERMERCADO KIYOMOTO - ESTRADA DO PEDROSO,1708 - JD VILA RICA - SANTO ANDRE</a></td>
+        <td><a href="https://www.google.com/maps/search/COMERCIAL SUPREMO ABC - RUA EUSEBIO DE QUEIROS, 7 - JARDIM IRENE - SANTO ANDRE" target="_blank">COMERCIAL SUPREMO ABC - RUA EUSEBIO DE QUEIROS, 7 - JARDIM IRENE - SANTO ANDRE</a></td>
+        <td><a href="https://www.google.com/maps/search/Tedeschi Comercio de Produtos Alimenticios - AV GUAIANAZES,838 - HOMERO THON - SANTO ANDRE" target="_blank">Tedeschi Comercio de Produtos Alimenticios - AV GUAIANAZES,838 - HOMERO THON - SANTO ANDRE</a></td>
+        <td><a href="https://www.google.com/maps/search/SUICA ABC COMERCIO DE DOCES - R SUICA, 937 - PQ. DAS NACOES - SANTO ANDRE" target="_blank">SUICA ABC COMERCIO DE DOCES - R SUICA, 937 - PQ. DAS NACOES - SANTO ANDRE</a></td>
+        <td><a href="https://www.google.com/maps/search/COMERCIAL DE PRODUTOS ALIMENTICIOS VIP -AVENIDA CONDE FRANCISCO MATARAZZO, 330" target="_blank">COMERCIAL DE PRODUTOS ALIMENTICIOS VIP -AVENIDA CONDE FRANCISCO MATARAZZO, 330</a></td>
+        <td><a href="https://www.google.com/maps/search/COMERCIAL DE PRODUTOS ALIMENTICIOS CHOCOTOM - RUA VISCONDE DE INHAUMA,936 - NOVA GERTY - SAO CAETANO DO SUL" target="_blank">COMERCIAL DE PRODUTOS ALIMENTICIOS CHOCOTOM - RUA VISCONDE DE INHAUMA,936 - NOVA GERTY - SAO CAETANO DO SUL</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/LIDIA PAULINA RIBEIRO - RUA XAVIER CURADO, 286 - IPIRANGA" target="_blank">LIDIA PAULINA RIBEIRO - RUA XAVIER CURADO, 286 - IPIRANGA</a></td>
+        <td><a href="https://www.google.com/maps/search/	MERCADINHO BELIZE - AV JABAQUARA, 562 - MIRANDOPOLIS" target="_blank">	MERCADINHO BELIZE - AV JABAQUARA, 562 - MIRANDOPOLIS</a></td>
+        <td><a href="https://www.google.com/maps/search/KATIA REGINA ASSUNCAO FERNANDES DOCERIA - R PARAGUAI, 234 - TABOO - DIADEMA" target="_blank">KATIA REGINA ASSUNCAO FERNANDES DOCERIA - R PARAGUAI, 234 - TABOO - DIADEMA</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPERMERCADO JARDIM TEREZA - RUA BAEPENDY, 421 - CAMPANARIO - DIADEMA" target="_blank">SUPERMERCADO JARDIM TEREZA - RUA BAEPENDY, 421 - CAMPANARIO - DIADEMA</a></td>
+        <td><a href="https://www.google.com/maps/search/CASA DO NORTE E MERCEARIA ESTEVAM - R POLONIA, 156 - JARDIM DAS NACOES - DIADEMA" target="_blank">CASA DO NORTE E MERCEARIA ESTEVAM - R POLONIA, 156 - JARDIM DAS NACOES - DIADEMA</a></td>
+        <td><a href="https://www.google.com/maps/search/O. R. FERNANDES DOCERIA - AV DOM JOAO VI, 269 - VILA JACYRA - DIADEMA" target="_blank">O. R. FERNANDES DOCERIA - AV DOM JOAO VI, 269 - VILA JACYRA - DIADEMA</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO VILA RICA PLUS - RUA LUIZ DE VASCONCELOS, 127 - JARDIM MARILENE - DIADEMA" target="_blank">SUPERMERCADO VILA RICA PLUS - RUA LUIZ DE VASCONCELOS, 127 - JARDIM MARILENE - DIADEMA</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO FLAQUER - AV SENADOR FLAQUER, 862 - VILA EUCLIDES - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO FLAQUER - AV SENADOR FLAQUER, 862 - VILA EUCLIDES - SAO BERNARDO DO CAMPO</a></td>
+      <td><a href="https://www.google.com/maps/search/DOCELANDIA PAULISTA CAFETERIA E COMERCIO DE DOCES - AV JABAQUARA, 2848 - JABAQUARA" target="_blank">DOCELANDIA PAULISTA CAFETERIA E COMERCIO DE DOCES - AV JABAQUARA, 2848 - JABAQUARA</a></td>
+      <td><a href="https://www.google.com/maps/search/LIDIA PAULINA RIBEIRO - RUA XAVIER CURADO, 286 - IPIRANGA" target="_blank">LIDIA PAULINA RIBEIRO - RUA XAVIER CURADO, 286 - IPIRANGA</a></td>
+      <td><a href="https://www.google.com/maps/search/MARIOMAR GENEROS ALIMENTICIOS - R VERGUEIRO, 5481 - SAUDE" target="_blank">MARIOMAR GENEROS ALIMENTICIOS - R VERGUEIRO, 5481 - SAUDE</a></td>
+      <td><a href="https://www.google.com/maps/search/MERCADINHO BELIZE - AV JABAQUARA, 562 - MIRANDOPOLIS" target="_blank">MERCADINHO BELIZE - AV JABAQUARA, 562 - MIRANDOPOLIS</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.google.com/maps/search/INDUSTRIA E COMERCIO DE DOCES GRETA - RUA PAULO DE ANHAIA, 36 - VL BRASILIO MACHADO" target="_blank">INDUSTRIA E COMERCIO DE DOCES GRETA - RUA PAULO DE ANHAIA, 36 - VL BRASILIO MACHADO</a></td>
+      <td><a href="https://www.google.com/maps/search/CLAUDIO CARMO RODRIGUES - R POLONIA (VL MARQUES), 130 - TABOAO - DIADEMA" target="_blank">CLAUDIO CARMO RODRIGUES - R POLONIA (VL MARQUES), 130 - TABOAO - DIADEMA</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO SHIMIZU & FILHOS - R DAS FIGUEIRAS, 294 - JARDIM ABC - DIADEMA" target="_blank">SUPERMERCADO SHIMIZU & FILHOS - R DAS FIGUEIRAS, 294 - JARDIM ABC - DIADEMA</a></td>
+      <td><a href="https://www.google.com/maps/search/ADRIANO DE JESUS FONSECA SUPERMERCADOS -" target="_blank">ADRIANO DE JESUS FONSECA SUPERMERCADOS -</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO VILA RICA PLUS - RUA LUIZ DE VASCONCELOS, 127 - JARDIM MARILENE - DIADEMA" target="_blank">SUPERMERCADO VILA RICA PLUS - RUA LUIZ DE VASCONCELOS, 127 - JARDIM MARILENE - DIADEMA</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO FLAQUER - AV SENADOR FLAQUER, 862 - VILA EUCLIDES - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO FLAQUER - AV SENADOR FLAQUER, 862 - VILA EUCLIDES - SAO BERNARDO DO CAMPO</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.google.com/maps/search/SUPER DOCES COM. V. DE DOCES E ARTIGOS P/ FESTA - AV DOM JOAO VI, 436 - TABOAO - DIADEMA" target="_blank">SUPER DOCES COM. V. DE DOCES E ARTIGOS P/ FESTA - AV DOM JOAO VI, 436 - TABOAO - DIADEMA</a></td>
+    <td><a href="https://www.google.com/maps/search/SUPERMERCADOS NOGUEIRA - RUA ANTONIO DIAS ADORNO, 641 - VILA NOGUEIRA - DIADEMA" target="_blank">SUPERMERCADOS NOGUEIRA - RUA ANTONIO DIAS ADORNO, 641 - VILA NOGUEIRA - DIADEMA</a></td>
+    <td><a href="https://www.google.com/maps/search/MERCADO EXITO - R JURUPARI, 19 - JARDIM ORIENTAL" target="_blank">MERCADO EXITO - R JURUPARI, 19 - JARDIM ORIENTAL</a></td>
+    <td><a href="https://www.google.com/maps/search/DOCELANDIA PAULISTA CAFETERIA E COMERCIO DE DOCES - AV JABAQUARA, 2848 - JABAQUARA" target="_blank">DOCELANDIA PAULISTA CAFETERIA E COMERCIO DE DOCES - AV JABAQUARA, 2848 - JABAQUARA</a></td>
+    <td><a href="https://www.google.com/maps/search/CASA DE BISCOITOS VILA MARIANA - RUA DOMINGOS DE MORAES, 1000 - VILA MARIANA" target="_blank">CASA DE BISCOITOS VILA MARIANA - RUA DOMINGOS DE MORAES, 1000 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/HORTIFRUTI VILA DAS FRUTAS BOSQUE DA SAUDE - AV PROFESSOR NOE AZEVEDO,38 - VILA MARIANA" target="_blank">HORTIFRUTI VILA DAS FRUTAS BOSQUE DA SAUDE - AV PROFESSOR NOE AZEVEDO,38 - VILA MARIANA</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.google.com/maps/search/MISTER DOCE COMERCIO DE ALIMENTOS - R SANTA CRUZ, 200 - VILA MARIANA" target="_blank">MISTER DOCE COMERCIO DE ALIMENTOS - R SANTA CRUZ, 200 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/EVINHA DOCES EUROPEUS INDUSTRIA E COMERCIO - RUA ESTADO DE ISRAEL, 108 - VILA MARIANA" target="_blank">EVINHA DOCES EUROPEUS INDUSTRIA E COMERCIO - RUA ESTADO DE ISRAEL, 108 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/CASA DE BISCOITOS VILA MARIANA - RUA DOMINGOS DE MORAES, 1000 - VILA MARIANA" target="_blank">CASA DE BISCOITOS VILA MARIANA - RUA DOMINGOS DE MORAES, 1000 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/MISTER DOCE COMERCIO DE ALIMENTOS - R SANTA CRUZ, 200 - VILA MARIANA" target="_blank">MISTER DOCE COMERCIO DE ALIMENTOS - R SANTA CRUZ, 200 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/EVINHA DOCES EUROPEUS INDUSTRIA E COMERCIO - RUA ESTADO DE ISRAEL, 108 - VILA MARIANA" target="_blank">EVINHA DOCES EUROPEUS INDUSTRIA E COMERCIO - RUA ESTADO DE ISRAEL, 108 - VILA MARIANA</a></td>
+    <td><a href="https://www.google.com/maps/search/MASTER FRIOS SAUDE - RUA SAO SEBASTIAO, 85 - SAUDE" target="_blank">MASTER FRIOS SAUDE - RUA SAO SEBASTIAO, 85 - SAUDE</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO SUPER MEGA - EST SAMUEL AIZEMBERG, 900 - ALVES DIAS - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO SUPER MEGA - EST SAMUEL AIZEMBERG, 900 - ALVES DIAS - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/VILA ROSA MERCADO - AV JOAQUIM GONCALVES LEDO, 123 - INDEPENDENCIA - SAO BERNARDO DO CAMPO" target="_blank">VILA ROSA MERCADO - AV JOAQUIM GONCALVES LEDO, 123 - INDEPENDENCIA - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO BATISTINI - ESTRADA GALVAO BUENO, 5015 - BATISTINI - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO BATISTINI - ESTRADA GALVAO BUENO, 5015 - BATISTINI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO BATISTINI - ESTRADA GALVAO BUENO, 5015 - BATISTINI - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO BATISTINI - ESTRADA GALVAO BUENO, 5015 - BATISTINI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO REPRESA - RUA BELA VISTA, 187 - BATISTINI - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO REPRESA - RUA BELA VISTA, 187 - BATISTINI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/DORALICE CANDIDO OLIVEIRA - EST GALVAO BUENO, 9550 - DEMARCHI - SAO BERNARDO DO CAMPO" target="_blank">DORALICE CANDIDO OLIVEIRA - EST GALVAO BUENO, 9550 - DEMARCHI - SAO BERNARDO DO CAMPO</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO BOM PRECO - EST GALVAO BUENO, 11.752 - BATISTINI - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO BOM PRECO - EST GALVAO BUENO, 11.752 - BATISTINI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/E D LIMA MERCADO E ACOUGUE SF - R LEONARDO MARTINS NETO,716 - DOS CASA - SAO BERNARDO DO CAMPO" target="_blank">E D LIMA MERCADO E ACOUGUE SF - R LEONARDO MARTINS NETO,716 - DOS CASA - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO DOS CASA - EST DOS CASA, 3737 - DOS CASA - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO DOS CASA - EST DOS CASA, 3737 - DOS CASA - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO DEMARCHI - AV MARIA SERVIDEI DEMARCHI, 1559 - DEMARCHI - SAO BERNARDO DO CAMPO" target="_blank">SUPER MERCADO DEMARCHI - AV MARIA SERVIDEI DEMARCHI, 1559 - DEMARCHI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/COMERCIAL OSWALDO CRUZ - R 24 DE FEVEREIRO, 889 - CENTRO - SANTO ANDRE" target="_blank">COMERCIAL OSWALDO CRUZ - R 24 DE FEVEREIRO, 889 - CENTRO - SANTO ANDRE</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO SUPER MEGA - EST SAMUEL AIZEMBERG, 900 - ALVES DIAS - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO SUPER MEGA - EST SAMUEL AIZEMBERG, 900 - ALVES DIAS - SAO BERNARDO DO CAMPO</a></td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/VILA ROSA MERCADO - AV JOAQUIM GONCALVES LEDO, 123 - INDEPENDENCIA - SAO BERNARDO DO CAMPO" target="_blank">VILA ROSA MERCADO - AV JOAQUIM GONCALVES LEDO, 123 - INDEPENDENCIA - SAO BERNARDO DO CAMPO</a></td>
+<td><a href="https://www.google.com/maps/search/ROGERIO CIRILO - ESTRADA COOPERATIVA, 208 - ALVES DIAS - SAO BERNARDO DO CAMPO" target="_blank">ROGERIO CIRILO - ESTRADA COOPERATIVA, 208 - ALVES DIAS - SAO BERNARDO DO CAMPO</a></td>
+<td><a href="https://www.google.com/maps/search/SUPERMERCADO JARDIM ORQUIDEA - ESTRADA DO PONEY CLUB, 975 - ALVARENGA - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO JARDIM ORQUIDEA - ESTRADA DO PONEY CLUB, 975 - ALVARENGA - SAO BERNARDO DO CAMPO</a></td>
+<td><a href="https://www.google.com/maps/search/SUPERMERCADO SOUSA M M - R PONTA GROSSA, 4 - JARDIM DA REPRESA - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO SOUSA M M - R PONTA GROSSA, 4 - JARDIM DA REPRESA - SAO BERNARDO DO CAMPO</a></td>
+<td><a href="https://www.google.com/maps/search/MINI MERCADO PADARIA ACOUGUE UNIAO DA SERRA - R UNA, 2 - JARDIM REPRESA - SAO BERNARDO DO CAMPO" target="_blank">MINI MERCADO PADARIA ACOUGUE UNIAO DA SERRA - R UNA, 2 - JARDIM REPRESA - SAO BERNARDO DO CAMPO</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADINHO PORTO CALVO R LAGO DA MANGUEIRA, 252 - JARDIM DO LAGO - SAO BERNARDO DO CAMPO" target="_blank">MERCADINHO PORTO CALVO R LAGO DA MANGUEIRA, 252 - JARDIM DO LAGO - SAO BERNARDO DO CAMPO</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO DOS CASA EST DOS CASA, 3737 - DOS CASA - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO DOS CASA EST DOS CASA, 3737 - DOS CASA - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/AIMAM COMERCIO DE DOCES E SALGADOS ESTRADA DOS CASAS, 3292 - JARDIM IPE - SAO BERNARDO DO CAMPO" target="_blank">AIMAM COMERCIO DE DOCES E SALGADOS ESTRADA DOS CASAS, 3292 - JARDIM IPE - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO DEMARCHI AV MARIA SERVIDEI DEMARCHI, 1559 - DEMARCHI - SAO BERNARDO DO CAMPO" target="_blank">SUPER MERCADO DEMARCHI AV MARIA SERVIDEI DEMARCHI, 1559 - DEMARCHI - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/MERCADO SUA OPÇÃO *JARDIM DO LAGO AV FELIPE COMÉRCIO, 20 - FERRAZÓPOLIS - SAO BERNARDO DO CAMPO" target="_blank">MERCADO SUA OPÇÃO *JARDIM DO LAGO AV FELIPE COMÉRCIO, 20 - FERRAZÓPOLIS - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/DISTRIBUIDORA DE GENEROS ALIMENTICIOS AB AVENIDA DO TABOAO, 3886 - TABOAO - SAO BERNARDO DO CAMPO" target="_blank">DISTRIBUIDORA DE GENEROS ALIMENTICIOS AB AVENIDA DO TABOAO, 3886 - TABOAO - SAO BERNARDO DO CAMPO</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA ATIBAIA AV PROFESSOR FLAVIO PIRES DE CAMARGO, 850 - CAETETUBA - ATIBAIA" target="_blank">SUPER MERCADO DA PRACA ATIBAIA AV PROFESSOR FLAVIO PIRES DE CAMARGO, 850 - CAETETUBA - ATIBAIA</a></td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRAÇA ARAÇOIABA R 21 DE ABRIL, 442 - CENTRO - ARACOIABA DA SERRA" target="_blank">SUPER MERCADO DA PRAÇA ARAÇOIABA R 21 DE ABRIL, 442 - CENTRO - ARACOIABA DA SERRA</a></td>
+<td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRAÇA IMIGRANTES AV DOS IMIGRANTES, 2222 - JARDIM AMERICA - BRAGANCA PAULISTA" target="_blank">SUPER MERCADO DA PRAÇA IMIGRANTES AV DOS IMIGRANTES, 2222 - JARDIM AMERICA - BRAGANCA PAULISTA</a></td>
+<td><a href="https://www.google.com/maps/search/SUPER MERCADO JOIA AVENIDA ADEMAR DE BARROS, 3255 - VILA LIGIA - GUARUJA" target="_blank">SUPER MERCADO JOIA AVENIDA ADEMAR DE BARROS, 3255 - VILA LIGIA - GUARUJA</a></td>
+<td><a href="https://www.google.com/maps/search/TAKARA & CIA R SAO GONCALO DO ABAETE, 51 - PRQ TIETE" target="_blank">TAKARA & CIA R SAO GONCALO DO ABAETE, 51 - PRQ TIETE</a></td>
+<td><a href="https://www.google.com/maps/search/SUPERMERCADO PAINEIRA R ALTO SUCURIU, 172 - JARDIM PERI" target="_blank">SUPERMERCADO PAINEIRA R ALTO SUCURIU, 172 - JARDIM PERI</a></td>
+<td><a href="https://www.google.com/maps/search/SUPERMERCADO SAO JUDAS AV SEN PINHEIRO MACHADO, 502 - MARAPE - SANTOS" target="_blank">SUPERMERCADO SAO JUDAS AV SEN PINHEIRO MACHADO, 502 - MARAPE - SANTOS</a></td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/KRILL UNIAO AV PREFEITO PRESTES MAIA, 20 - ESPLANADA DOS BARREIROS - SAO VICENTE" target="_blank">KRILL UNIAO AV PREFEITO PRESTES MAIA, 20 - ESPLANADA DOS BARREIROS - SAO VICENTE</a></td>
+<td><a href="https://www.google.com/maps/search/KRILL ALMEIDA ROCHA NAUTICA R GUILHERME RAPOSO DE ALMEIDA, 373 - CIDADE NAUTICA - SAO VICENTE" target="_blank">KRILL ALMEIDA ROCHA NAUTICA R GUILHERME RAPOSO DE ALMEIDA, 373 - CIDADE NAUTICA - SAO VICENTE</a></td>
+<td><a href="https://www.google.com/maps/search/CLAUDIO OLIVEIRA DA ROCHA MERCADO AV ITAPARK, 3216 - JARDIM ITAPARK - MAUA" target="_blank">CLAUDIO OLIVEIRA DA ROCHA MERCADO AV ITAPARK, 3216 - JARDIM ITAPARK - MAUA</a></td>
+<td><a href="https://www.google.com/maps/search/COMERCIO DE ALIMENTOS BURITI VERDE RUA FERNAO DIAS, 5 - VILA AUGUSTO - MAUA" target="_blank">COMERCIO DE ALIMENTOS BURITI VERDE RUA FERNAO DIAS, 5 - VILA AUGUSTO - MAUA</a></td>
+<td><a href="https://www.google.com/maps/search/EMPORIO TROPICAL AV FRANCISCO MONTEIRO, 2730 - SANTA LUZIA - RIBEIRAO PIRES" target="_blank">EMPORIO TROPICAL AV FRANCISCO MONTEIRO, 2730 - SANTA LUZIA - RIBEIRAO PIRES</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADO DA CARNE T.F. RUA ERNESTO MAZIERO, 66 - SANTA LUZIA - RIBEIRAO PIRES" target="_blank">MERCADO DA CARNE T.F. RUA ERNESTO MAZIERO, 66 - SANTA LUZIA - RIBEIRAO PIRES</a></td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/VD DE MEDEIROS MERCADORIAS EM GERAL ROD INDIO TIBIRICA, 12507 - PALMEIRAS DE SAO PAULO - SUZANO" target="_blank">VD DE MEDEIROS MERCADORIAS EM GERAL ROD INDIO TIBIRICA, 12507 - PALMEIRAS DE SAO PAULO - SUZANO</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADINHO SEANE DE IPELANDIA EST KEIDA HARADA, 85 - IPELANDIA - SUZANO" target="_blank">	MERCADINHO SEANE DE IPELANDIA EST KEIDA HARADA, 85 - IPELANDIA - SUZANO</a></td>
+<td><a href="https://www.google.com/maps/search/MINIMERCADO SEBASTIAO JOAQUIM RODOVIA INDIO TIBIRICA, 12568 - BAIRRO DAS PALMEIRAS - SUZANO" target="_blank">	MINIMERCADO SEBASTIAO JOAQUIM RODOVIA INDIO TIBIRICA, 12568 - BAIRRO DAS PALMEIRAS - SUZANO</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADO E PADARIA ESTANCIA ROD INDIO TIBIRICA, 14952 - ESTANCIA AMERICANA - SUZANO" target="_blank">MERCADO E PADARIA ESTANCIA ROD INDIO TIBIRICA, 14952 - ESTANCIA AMERICANA - SUZANO</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADINHO MONIQUII RUA SAO SILVESTRE, 128 - JARDIM PILAR - MAUA" target="_blank">MERCADINHO MONIQUII RUA SAO SILVESTRE, 128 - JARDIM PILAR - MAUA</a></td>
+<td><a href="https://www.google.com/maps/search/FESTERE COMERCIO DE PRODUTOS ALIMENTICIOS AV DOM JOSE GASPAR, 1292 - VILA ASSIS BRASIL - MAUA" target="_blank">FESTERE COMERCIO DE PRODUTOS ALIMENTICIOS AV DOM JOSE GASPAR, 1292 - VILA ASSIS BRASIL - MAUA</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/maps/search/LOURENCINI MERCADINHO LJ4 AV BARAO DE MAUA, 5716 - JARDIM ITAPEVA - MAUA" target="_blank">LOURENCINI MERCADINHO LJ4 AV BARAO DE MAUA, 5716 - JARDIM ITAPEVA - MAUA</a></td>
+  <td><a href="https://www.google.com/maps/search/LOURENCINI MERCADINHO AVENIDA ITAPARK, 3810 - JARDIM ITAPARK - MAUA" target="_blank">LOURENCINI MERCADINHO AVENIDA ITAPARK, 3810 - JARDIM ITAPARK - MAUA</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA NESTAL RUA MIGUEL FERREIRA DE MELO, 230 - JARDIM SANTO ANDRE" target="_blank">SUPER MERCADO DA PRACA NESTAL RUA MIGUEL FERREIRA DE MELO, 230 - JARDIM SANTO ANDRE</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA ALEGRIA RUA ENGENHEIRO ARMANDO ARRUDA PEREIRA, 1439 - CERAMICA - SAO CAETANO DO SUL" target="_blank">SUPER MERCADO DA PRACA ALEGRIA RUA ENGENHEIRO ARMANDO ARRUDA PEREIRA, 1439 - CERAMICA - SAO CAETANO DO SUL</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPER MERCADO CHAMA SAPOPEMBA LJ 9 AV SAPOPEMBA, 606 - JARDIM UTINGA - SANTO ANDRE" target="_blank">SUPER MERCADO CHAMA SAPOPEMBA LJ 9 AV SAPOPEMBA, 606 - JARDIM UTINGA - SANTO ANDRE</a></td>
+  <td><a href="https://www.google.com/maps/search/SUPERMERCADO REPRESA RUA BELA VISTA, 187 - BATISTINI - SAO BERNARDO DO CAMPO" target="_blank">SUPERMERCADO REPRESA RUA BELA VISTA, 187 - BATISTINI - SAO BERNARDO DO CAMPO</a></td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/maps/search/MERCADO CLAUDIO OLIVEIRA DA ROCHA AV: ITAPARK, 3216 - JARDIM ITAPARK" target="_blank">MERCADO CLAUDIO OLIVEIRA DA ROCHA AV: ITAPARK, 3216 - JARDIM ITAPARK</a></td>
+<td><a href="https://www.google.com/maps/search/COMERCIO DE ALIMENTOS BURITI VERDE RUA FERNAO DIAS, 5 - VILA AUGUSTO" target="_blank">COMERCIO DE ALIMENTOS BURITI VERDE RUA FERNAO DIAS, 5 - VILA AUGUSTO</a></td>
+<td><a href="https://www.google.com/maps/search/EMPORIO TROPICAL AV: FRANCISCO MONTEIRO, 2730 - SANTA LUZIA" target="_blank">EMPORIO TROPICAL AV: FRANCISCO MONTEIRO, 2730 - SANTA LUZIA</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADO DA CARNE T.F. RUA ERNESTO MAZIERO, 66 - SANTA LUZIA" target="_blank">MERCADO DA CARNE T.F. RUA ERNESTO MAZIERO, 66 - SANTA LUZIA</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADORIAS EM GERAL VD DE MEDEIROS ROD INDIO TIBIRICA, 12507 - PALMEIRAS DE SAO PAULO" target="_blank">MERCADORIAS EM GERAL VD DE MEDEIROS ROD INDIO TIBIRICA, 12507 - PALMEIRAS DE SAO PAULO</a></td>
+<td><a href="https://www.google.com/maps/search/MERCADINHO SEANE DE IPELANDIA EST KEIDA HARADA, 85 - IPELANDIA" target="_blank">MERCADINHO SEANE DE IPELANDIA EST KEIDA HARADA, 85 - IPELANDIA</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/maps/search/MINIMERCADO SEBASTIAO JOAQUIM RODOVIA INDIO TIBIRICA, 12568 - BAIRRO DAS PALMEIRAS" target="_blank">MINIMERCADO SEBASTIAO JOAQUIM RODOVIA INDIO TIBIRICA, 12568 - BAIRRO DAS PALMEIRAS</a></td>
+  <td><a href="" target="_blank"></a></td>
+  <td><a href="" target="_blank"></a></td>
+  <td><a href="" target="_blank"></a></td>
+  <td><a href="" target="_blank"></a></td>
+  <td><a href="" target="_blank"></a></td>
+</tr>
+      </table>
+  </div>
+
+  <div class="zona" onclick="toggleZona('centro')">Centro<span class="arrow">▼</span></div>
+  <div id="centro" class="tabela-estabelecimentos">
+      <table>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/MERCADO HUMAITA R HUMAITA, 354 - BELA VISTA" target="_blank">MERCADO HUMAITA R HUMAITA, 354 - BELA VISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/D L A SUPERMERCADOS R CONSELHEIRO RAMALHO, 858 - BELA VISTA" target="_blank">D L A SUPERMERCADOS R CONSELHEIRO RAMALHO, 858 - BELA VISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/XIAOJIAN LI R MARTINIANO DE CARVALHO, 40 - BELA VISTA" target="_blank">XIAOJIAN LI R MARTINIANO DE CARVALHO, 40 - BELA VISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADO LIN FAMILIA FELIZ PRACA GENERAL CRAVEIRO LOPES, 107 - BELA VISTA" target="_blank">MERCADO LIN FAMILIA FELIZ PRACA GENERAL CRAVEIRO LOPES, 107 - BELA VISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADINHO NESTOR PESTANA RUA NESTOR PESTANA, 40 - CONSOLACAO" target="_blank">MERCADINHO NESTOR PESTANA RUA NESTOR PESTANA, 40 - CONSOLACAO</a></td>
+          <td><a href="https://www.google.com/maps/search/MOREIRA & MARQUES R S BENTO, 366 - CENTRO" target="_blank">MOREIRA & MARQUES R S BENTO, 366 - CENTRO</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/SUPERMERCADOS K21 COMERCIO Avenida Celso Garcia, 1190 - Brás" target="_blank">SUPERMERCADOS K21 COMERCIO Avenida Celso Garcia, 1190 - Brás</a></td>
+        <td><a href="https://www.google.com/maps/search/CASA GOMES DOCES PRACA PEDRO LESSA, 87 - CENTRO" target="_blank">CASA GOMES DOCES PRACA PEDRO LESSA, 87 - CENTRO</a></td>
+        <td><a href="https://www.google.com/maps/search/PADARIA E MINIMERCADO SENADOR EMPORIO AV SEN QUEIROS, 289 - CENTRO" target="_blank">PADARIA E MINIMERCADO SENADOR EMPORIO AV SEN QUEIROS, 289 - CENTRO</a></td>
+        <td><a href="https://www.google.com/maps/search/JOTA JOTAS DISTRIBUIDORA AV ANGELICA, 161 - SANTA CECILIA" target="_blank">JOTA JOTAS DISTRIBUIDORA AV ANGELICA, 161 - SANTA CECILIA</a></td>
+        <td><a href="https://www.google.com/maps/search/COMERCIO DE PRODUTOS ALIMENTICIOS BRESSER AVENIDA CELSO GARCIA, 331 - BRAS" target="_blank">COMERCIO DE PRODUTOS ALIMENTICIOS BRESSER AVENIDA CELSO GARCIA, 331 - BRAS</a></td>
+        <td><a href="https://www.google.com/maps/search/MIG MERCADINHO E CAFETERIA R HIPODROMO, 628 - BRAS" target="_blank">MIG MERCADINHO E CAFETERIA R HIPODROMO, 628 - BRAS</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/DELFAN MINIMERCADO ALAMEDA ARAPANES, 788 - INDIANOPOLIS" target="_blank">DELFAN MINIMERCADO ALAMEDA ARAPANES, 788 - INDIANOPOLIS</a></td>
+        <td><a href="https://www.google.com/maps/search/MFR COMERCIO VAREJISTA DE PRODUTOS ALIMENTICIOS RUA DAS PALMEIRAS,135 - SANTA CECILIA" target="_blank">MFR COMERCIO VAREJISTA DE PRODUTOS ALIMENTICIOS RUA DAS PALMEIRAS,135 - SANTA CECILIA</a></td>
+        <td><a href="https://www.google.com/maps/search/VITORIA SUPER SUPER MERCADO R SETE DE ABRIL, 360 - REPUBLICA" target="_blank">VITORIA SUPER SUPER MERCADO R SETE DE ABRIL, 360 - REPUBLICA</a></td>
+        <td><a href="https://www.google.com/maps/search/ODMEYER SUPER MERCEARIA AV CASPER LIBERO, 144 - CENTRO" target="_blank">ODMEYER SUPER MERCEARIA AV CASPER LIBERO, 144 - CENTRO</a></td>
+        <td><a href="https://www.google.com/maps/search/MARIA IRMA FERREIRA RUA HANNEMANN ,461 - PARI" target="_blank">MARIA IRMA FERREIRA RUA HANNEMANN ,461 - PARI</a></td>
+        <td><a href="https://www.google.com/maps/search/CRISTIANE A. BERNARDES (CEZAR DOCES) R FRANCISCO BORGES, 58 - BOM RETIRO" target="_blank">CRISTIANE A. BERNARDES (CEZAR DOCES) R FRANCISCO BORGES, 58 - BOM RETIRO</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.google.com/maps/search/ZE BOLACHA COMERCIO DE GENEROS ALIMENTICIOS PC DA REPUBLICA, 176 - CENTRO" target="_blank">ZE BOLACHA COMERCIO DE GENEROS ALIMENTICIOS PC DA REPUBLICA, 176 - CENTRO</a></td>
+      <td><a href="https://www.google.com/maps/search/FABIANO BENTO DE SOUZA PAIVA DOCES RUA CAP SALOMAO, 27 - CENTRO" target="_blank">FABIANO BENTO DE SOUZA PAIVA DOCES RUA CAP SALOMAO, 27 - CENTRO</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO PAO DE ALHO AL EDUARDO PRADO, 797 - CAMPOS ELISEOS" target="_blank">SUPERMERCADO PAO DE ALHO AL EDUARDO PRADO, 797 - CAMPOS ELISEOS</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA BELA VISTA RUA TREZE DE MAIO, 1.576 - BELA VISTA" target="_blank">SUPER MERCADO DA PRACA BELA VISTA RUA TREZE DE MAIO, 1.576 - BELA VISTA</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPER MERCADO DA PRACA HELIOPOLIS ESTRADA DAS LAGRIMAS, 2.068 - IPIRANGA" target="_blank">SUPER MERCADO DA PRACA HELIOPOLIS ESTRADA DAS LAGRIMAS, 2.068 - IPIRANGA</a></td>
+      <td><a href="" target="_blank"></a></td>
+    </tr>
+      </table>
+  </div>
+
+  <div class="zona" onclick="toggleZona('litoral')">Litoral<span class="arrow">▼</span></div>
+  <div id="litoral" class="tabela-estabelecimentos">
+      <table>
+        <tr>
+          <td><a href="https://www.google.com/maps/search/KRILL SANTOS R VEREADOR ALVARO GUIMARAES, 148 - RADIO CLUBE - SANTOS" target="_blank">KRILL SANTOS R VEREADOR ALVARO GUIMARAES, 148 - RADIO CLUBE - SANTOS</a></td>
+          <td><a href="https://www.google.com/maps/search/KRILL ITANHAEM R DOS FUNDADORES, 463 - PRAIA DO SONHO - ITANHAEM" target="_blank">KRILL ITANHAEM R DOS FUNDADORES, 463 - PRAIA DO SONHO - ITANHAEM</a></td>
+          <td><a href="https://www.google.com/maps/search/KRILL ALMEIDA ROCHA 2 AV MARCOLINO XAVIER DE CARVALHO, 313 - CIDADE NAUTICA - SAO VICENTE" target="_blank">XKRILL ALMEIDA ROCHA 2 AV MARCOLINO XAVIER DE CARVALHO, 313 - CIDADE NAUTICA - SAO VICENTE</a></td>
+          <td><a href="https://www.google.com/maps/search/MERCADO LIN FAMILIA FELIZ PRACA GENERAL CRAVEIRO LOPES, 107 - BELA VISTA" target="_blank">MERCADO LIN FAMILIA FELIZ PRACA GENERAL CRAVEIRO LOPES, 107 - BELA VISTA</a></td>
+          <td><a href="https://www.google.com/maps/search/KRILL VL SONIA R ANTONIO CANDIDO DA SILVA, 57 - VILA SONIA - PRAIA GRANDE" target="_blank">KRILL VL SONIA R ANTONIO CANDIDO DA SILVA, 57 - VILA SONIA - PRAIA GRANDE</a></td>
+          <td><a href="https://www.google.com/maps/search/KRILL MERI R MARINA, 1.081 - CENTRO - MONGAGUA" target="_blank">KRILL MERI R MARINA, 1.081 - CENTRO - MONGAGUA</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/KRILL CUBATÃO AV MARTINS FONTES, 1.101 - VILA NOVA - CUBATAO" target="_blank">KRILL CUBATÃO AV MARTINS FONTES, 1.101 - VILA NOVA - CUBATAO</a></td>
+        <td><a href="https://www.google.com/maps/search/KRIIL GUARUJA AV TANCREDO NEVES, 100 - CACHOEIRA - GUARUJA" target="_blank">KRIIL GUARUJA AV TANCREDO NEVES, 100 - CACHOEIRA - GUARUJA</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL VICENTE DE CARVALH AV SANTOS DUMONT, 1.503 - SITIO PAECARA (VICENTE DE CARVALHO) - GUARUJA" target="_blank">KRILL VICENTE DE CARVALH AV SANTOS DUMONT, 1.503 - SITIO PAECARA (VICENTE DE CARVALHO) - GUARUJA</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL PERUIBE AV LUCIANO DE BONA, 2.027 - VILA ROMAR - PERUIBE" target="_blank">KRILL PERUIBE AV LUCIANO DE BONA, 2.027 - VILA ROMAR - PERUIBE</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL ARESTA AV NOSSA SENHORA DE FATIMA, 430 - AGENOR DE CAMPOS - MONGAGUA" target="_blank">KRILL ARESTA AV NOSSA SENHORA DE FATIMA, 430 - AGENOR DE CAMPOS - MONGAGUA</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL CAIÇARA AV DOS CAICARAS, 1.682 - JARDIM LAS PALMAS - GUARUJA" target="_blank">KRILL CAIÇARA AV DOS CAICARAS, 1.682 - JARDIM LAS PALMAS - GUARUJA</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.google.com/maps/search/KRILL NOVA CINTRA AV SANTISTA, 833 - MORRO NOVA CINTRA - SANTOS" target="_blank">KRILL NOVA CINTRA AV SANTISTA, 833 - MORRO NOVA CINTRA - SANTOS</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL FREI GASPAR R FREI GASPAR, 2000 - PARQUE SAO VICENTE - SAO VICENTE," target="_blank">KRILL FREI GASPAR R FREI GASPAR, 2000 - PARQUE SAO VICENTE - SAO VICENTE,</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL ENSEADA RUA AUREO GUENAGA DE CASTRO, 476 - MAR E CEU - GUARUJA" target="_blank">KRILL ENSEADA RUA AUREO GUENAGA DE CASTRO, 476 - MAR E CEU - GUARUJA</a></td>
+        <td><a href="https://www.google.com/maps/search/SUPER MERCADO JOIA RUA PETROPOLIS, 291 - BARRA FUNDA - GUARUJA" target="_blank">SUPER MERCADO JOIA RUA PETROPOLIS, 291 - BARRA FUNDA - GUARUJA</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL BERTIOGA AV ANCHIETA, 2.300 - ALBATROZ - BERTIOGA" target="_blank">KRILL BERTIOGA AV ANCHIETA, 2.300 - ALBATROZ - BERTIOGA</a></td>
+        <td><a href="https://www.google.com/maps/search/KRILL BORACEIA AV APROVADA 294, 775 - BORACEIA - BERTIOGA" target="_blank">KRILL BORACEIA AV APROVADA 294, 775 - BORACEIA - BERTIOGA</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.google.com/maps/search/KRILL BOICUCANGA EST DO CASCALHO, 415 - BOICUCANGA - SAO SEBASTIAO" target="_blank">KRILL BOICUCANGA EST DO CASCALHO, 415 - BOICUCANGA - SAO SEBASTIAO</a></td>
+      <td><a href="https://www.google.com/maps/search/SUPERMERCADO ALMEIDA ROCHA SAO VICENTE R FRANKLIN CLASEN DE MOURA, 157 - CIDADE NAUTICA - SAO VICENTE2" target="_blank">SUPERMERCADO ALMEIDA ROCHA SAO VICENTE R FRANKLIN CLASEN DE MOURA, 157 - CIDADE NAUTICA - SAO VICENTE</a></td>
+      <td><a href="https://www.google.com/maps/search/MMBG COMERCIO VAREJ. E ATAC. DE GEN. ALI. AV PRESIDENTE CASTELO BRANCO, 55 - CENTRO - CARAGUATATUBA" target="_blank">MMBG COMERCIO VAREJ. E ATAC. DE GEN. ALI. AV PRESIDENTE CASTELO BRANCO, 55 - CENTRO - CARAGUATATUBA</a></td>
+      <td><a href="https://www.google.com/maps/search/SIS COMERCIO VAREJ E ATAC. DE GEN. ALIMENT AV RIO BRANCO, 400 - INDAIA - CARAGUATATUBA" target="_blank">SIS COMERCIO VAREJ E ATAC. DE GEN. ALIMENT AV RIO BRANCO, 400 - INDAIA - CARAGUATATUBA</a></td>
+      <td><a href="" target="_blank"></a></td>
+      <td><a href="" target="_blank"></a></td>
+    </tr>
+      </table>
+  </div>
+
+
+  <script>
+      function toggleZona(zonaId) {
+          var zona = document.getElementById(zonaId);
+          var arrow = zona.previousElementSibling.querySelector(".arrow");
+          if (zona.style.display === "block") {
+              zona.style.display = "none";
+              arrow.textContent = "▼";
+          } else {
+              zona.style.display = "block";
+              arrow.textContent = "▲";
+          }
+      }
+
+      function searchEstablishments() {
+          var input, filter, tables, rows, cells, i, j, cell, showRow;
+          input = document.getElementById("search");
+          filter = input.value.toUpperCase();
+          tables = document.querySelectorAll('.tabela-estabelecimentos table');
+          
+          for (i = 0; i < tables.length; i++) {
+              rows = tables[i].getElementsByTagName("tr");
+              
+              for (j = 0; j < rows.length; j++) {
+                  cells = rows[j].getElementsByTagName("td");
+                  showRow = false;
+
+                  for (var k = 0; k < cells.length; k++) {
+                      cell = cells[k].getElementsByTagName("a")[0];
+                      
+                      if (cell.textContent.toUpperCase().indexOf(filter) > -1) {
+                          cell.style.display = "";
+                          showRow = true;
+                      } else {
+                          cell.style.display = "none";
+                      }
+                  }
+
+                  if (showRow) {
+                      rows[j].style.display = "";
+                  } else {
+                      rows[j].style.display = "none";
+                  }
+              }
+          }
+      }
+  </script>
     <!-- Menu de Navegação -->
     <nav class="menu">
       <ul>

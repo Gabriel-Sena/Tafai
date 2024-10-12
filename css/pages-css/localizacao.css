@@ -1,1 +1,49 @@
 @import url(../global.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.fachada {
+    margin-bottom: 20px;
+}
+
+.fachada-imagem {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-mapa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.informacoes {
+    width: 45%;
+    text-align: left;
+    margin-left: 2.5%;
+}
+
+.informacoes p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; /* Fonte arredondada */
+}
+
+.mapa {
+    text-align: right;
+}
+
+.mapa-imagem {
+    width: 90%;
+    margin-right: 0.5%;
+    height: auto;
+    cursor: pointer;
+}
