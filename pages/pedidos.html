@@ -1,226 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/pages-css/pedidos.css">
-  <title>Pedidos</title>
-</head>
-<body>
-  <h1></h1>
-  <h1>Faça seu pedido!</h1>
-  <h1>BISCOITOS TAFAí-Rua Altair,135-Chácara Califórnia-Tatuapé -SP- Fone: 29410179-947977886</h1>
-  <h1>Envio para fora da Grande São Paulo, preço conforme tabela mais o custo do correio.</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/pages-css/pedidos.css" />
+    <title>Pedidos</title>
+  </head>
+  <body>
+    <h1></h1>
+    <h1>Faça seu pedido!</h1>
+    <h1>
+      BISCOITOS TAFAí-Rua Altair,135-Chácara Califórnia-Tatuapé -SP- Fone:
+      29410179-947977886
+    </h1>
+    <h1>
+      Envio para fora da Grande São Paulo, preço conforme tabela mais o custo do
+      correio.
+    </h1>
 
-  <!-- Formulário de Informações do Cliente -->
-  <form id="pedidoForm">
+    <!-- Formulário de Informações do Cliente -->
+    <form id="pedidoForm">
       <div class="linha">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-          <label for="filial">Filial:</label>
-          <input type="text" id="filial" name="filial" required>
+        <label for="filial">Filial:</label>
+        <input type="text" id="filial" name="filial" required />
       </div>
 
       <div class="linha">
-          <label for="endereco">Endereço:</label>
-          <input type="text" id="endereco" name="endereco" required>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required />
 
-          <label for="bairro">Bairro:</label>
-          <input type="text" id="bairro" name="bairro" required>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required />
 
-          <label for="municipio">Município:</label>
-          <input type="text" id="municipio" name="municipio" required>
+        <label for="municipio">Município:</label>
+        <input type="text" id="municipio" name="municipio" required />
 
-          <label for="uf">UF:</label>
-          <input type="text" id="uf" name="uf" required>
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf" required />
       </div>
 
       <div class="linha">
-          <label for="cnpj">CNPJ:</label>
-          <input type="text" id="cnpj" name="cnpj" required>
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required />
 
-          <label for="telefone">Telefone:</label>
-          <input type="text" id="telefone" name="telefone" required>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required />
 
-          <label for="pagamento">Forma de Pagamento:</label>
-          <select id="pagamento" name="pagamento" required>
-              <option value="boleto">Boleto</option>
-              <option value="debito">Débito</option>
-              <option value="pix">Pix</option>
-          </select>
+        <label for="pagamento">Forma de Pagamento:</label>
+        <select id="pagamento" name="pagamento" required>
+          <option value="boleto">Boleto</option>
+          <option value="debito">Débito</option>
+          <option value="pix">Pix</option>
+        </select>
       </div>
 
       <!-- Tabela de Produtos -->
       <h2>Produtos</h2>
       <table border="1" id="tabelaProdutos">
-          <thead>
-              <tr>
-                  <th>Código</th>
-                  <th>Código de Barras</th>
-                  <th>Produto</th>
-                  <th>Marca</th>
-                  <th>Caixa/Peso</th>
-                  <th>Preço Unitário</th>
-                  <th>Quantidade (Caixas)</th>
-                  <th>Valor Total</th>
-                  <th>Troca</th>
-              </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>7</td>
-              <td>7 898171340307</td>
-              <td>Batata Palha</td>
-              <td>Biscoitone</td>
-              <td>24X150G</td>
-              <td>R$ 8,99</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Código de Barras</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Caixa/Peso</th>
+            <th>Preço Unitário</th>
+            <th>Quantidade (Caixas)</th>
+            <th>Valor Total</th>
+            <th>Troca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>7</td>
+            <td>7 898171340307</td>
+            <td>Batata Palha</td>
+            <td>Biscoitone</td>
+            <td>24X150G</td>
+            <td>R$ 8,99</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>37</td>
-              <td>7 898171340215</td>
-              <td>Suspiro</td>
-              <td>Biscoitone</td>
-              <td>24X150G</td>
-              <td>R$ 5,39</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>37</td>
+            <td>7 898171340215</td>
+            <td>Suspiro</td>
+            <td>Biscoitone</td>
+            <td>24X150G</td>
+            <td>R$ 5,39</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>305</td>
-              <td>7 897014200044</td>
-              <td>Palito Caseiro</td>
-              <td>Franbert</td>
-              <td>20X80G</td>
-              <td>R$ 4,49</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>305</td>
+            <td>7 897014200044</td>
+            <td>Palito Caseiro</td>
+            <td>Franbert</td>
+            <td>20X80G</td>
+            <td>R$ 4,49</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>31</td>
-              <td>7 898097130099</td>
-              <td>Biscovilho Doce</td>
-              <td>Grannieri</td>
-              <td>20X80G</td>
-              <td>R$ 3,59</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>31</td>
+            <td>7 898097130099</td>
+            <td>Biscovilho Doce</td>
+            <td>Grannieri</td>
+            <td>20X80G</td>
+            <td>R$ 3,59</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>30</td>
-              <td>7 898097130051</td>
-              <td>Biscovilho Salgado</td>
-              <td>Grannieri</td>
-              <td>20X80G</td>
-              <td>R$ 3,59</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>30</td>
+            <td>7 898097130051</td>
+            <td>Biscovilho Salgado</td>
+            <td>Grannieri</td>
+            <td>20X80G</td>
+            <td>R$ 3,59</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>35</td>
-              <td>7 898097130358</td>
-              <td>Biscovilho Queijo</td>
-              <td>Grannieri</td>
-              <td>20X80G</td>
-              <td>R$ 3,59</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>35</td>
+            <td>7 898097130358</td>
+            <td>Biscovilho Queijo</td>
+            <td>Grannieri</td>
+            <td>20X80G</td>
+            <td>R$ 3,59</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>32</td>
-              <td>7 898912106216</td>
-              <td>Broa de Amendoim</td>
-              <td>Klain</td>
-              <td>15X250G</td>
-              <td>R$ 6,29</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>32</td>
+            <td>7 898912106216</td>
+            <td>Broa de Amendoim</td>
+            <td>Klain</td>
+            <td>15X250G</td>
+            <td>R$ 6,29</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>36</td>
-              <td>7 898912106872</td>
-              <td>Amendoim c/ Chocolate</td>
-              <td>Klain</td>
-              <td>15X260G</td>
-              <td>R$ 6,99</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>36</td>
+            <td>7 898912106872</td>
+            <td>Amendoim c/ Chocolate</td>
+            <td>Klain</td>
+            <td>15X260G</td>
+            <td>R$ 6,99</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>156</td>
-              <td>7 898963777946</td>
-              <td>Biscoito Amantegado</td>
-              <td>Klain</td>
-              <td>20X240G</td>
-              <td>R$ 5,19</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>156</td>
+            <td>7 898963777946</td>
+            <td>Biscoito Amantegado</td>
+            <td>Klain</td>
+            <td>20X240G</td>
+            <td>R$ 5,19</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>275</td>
-              <td>7 896259700036</td>
-              <td>Geléia de Mocotó</td>
-              <td>Mocoforte</td>
-              <td>50X140G</td>
-              <td>R$ 3,19</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>275</td>
+            <td>7 896259700036</td>
+            <td>Geléia de Mocotó</td>
+            <td>Mocoforte</td>
+            <td>50X140G</td>
+            <td>R$ 3,19</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>279</td>
-              <td>7 896564403080</td>
-              <td>Arroz Caramelizado</td>
-              <td>Paulista</td>
-              <td>24X90G</td>
-              <td>R$ 4,89</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>279</td>
+            <td>7 896564403080</td>
+            <td>Arroz Caramelizado</td>
+            <td>Paulista</td>
+            <td>24X90G</td>
+            <td>R$ 4,89</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>20</td>
-              <td>7 896564401277</td>
-              <td>Champagne</td>
-              <td>Paulista</td>
-              <td>12X300G</td>
-              <td>R$ 9,19</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>20</td>
+            <td>7 896564401277</td>
+            <td>Champagne</td>
+            <td>Paulista</td>
+            <td>12X300G</td>
+            <td>R$ 9,19</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>201</td>
-              <td>7 896564401154</td>
-              <td>Champagne</td>
-              <td>Paulista</td>
-              <td>24X150G</td>
-              <td>R$ 4,69</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>201</td>
+            <td>7 896564401154</td>
+            <td>Champagne</td>
+            <td>Paulista</td>
+            <td>24X150G</td>
+            <td>R$ 4,69</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
-              <td>202</td>
-              <td>7 896564401154</td>
-              <td>Sembei</td>
-              <td>Paulista</td>
-              <td>12X250G</td>
-              <td>R$ 11,59</td>
-              <td><input type="number" min="0" value="0" class="quantidade"></td>
-              <td class="valorTotal">R$ 0,00</td>
-              <td><input type="number" min="0" value="0" class="troca"></td>
+            <td>202</td>
+            <td>7 896564401154</td>
+            <td>Sembei</td>
+            <td>Paulista</td>
+            <td>12X250G</td>
+            <td>R$ 11,59</td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
+            <td class="valorTotal">R$ 0,00</td>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
           </tr>
           <tr>
             <td>205</td>
@@ -229,146 +263,168 @@
             <td>Paulista</td>
             <td>24X90G</td>
             <td>R$ 4,99</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>10</td>
             <td>7 896564401277</td>
             <td>Sequilho</td>
             <td>Paulista</td>
             <td>24X150G</td>
             <td>R$ 5,99</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>269</td>
             <td>7 896532700302</td>
             <td>Coco</td>
             <td>Petyan</td>
             <td>15X300G</td>
             <td>R$ 3,69</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>270</td>
             <td>7 896532700319</td>
             <td>Doce Petyan</td>
             <td>Petyan</td>
             <td>20X350G</td>
             <td>R$ 3,49</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>252</td>
             <td>7 897053100077</td>
             <td>Sete Capas</td>
             <td>São Benedito</td>
             <td>20X300G</td>
             <td>R$ 7,89</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>15</td>
             <td>7 896970700018</td>
             <td>Pipoca Tigrinho</td>
             <td>Tigrinho</td>
             <td>30X75G</td>
             <td>R$ 1,89</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>12</td>
             <td>7 898908535020</td>
             <td>Beijo Divino</td>
             <td>Konrad</td>
             <td>20X300G</td>
             <td>R$ 7,59</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>50</td>
             <td>7 898908535075</td>
             <td>Beijo de Rei</td>
             <td>Konrad</td>
             <td>20X300G</td>
             <td>R$ 5,89</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>25</td>
             <td>7 898908535013</td>
             <td>Beijo Glacial</td>
             <td>Konrad</td>
             <td>20X300G</td>
             <td>R$ 5,89</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>28</td>
             <td>7 898908535037</td>
             <td>Beijo Tafaí</td>
             <td>Konrad</td>
             <td>20X300G</td>
             <td>R$ 5,59</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-        <tr>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <tr>
             <td>263</td>
             <td>7 896486202884</td>
             <td>Coquinho</td>
             <td>Prodasa</td>
             <td>12X400G</td>
             <td>R$ 5,69</td>
-            <td><input type="number" min="0" value="0" class="quantidade"></td>
+            <td>
+              <input type="number" min="0" value="0" class="quantidade" />
+            </td>
             <td class="valorTotal">R$ 0,00</td>
-            <td><input type="number" min="0" value="0" class="troca"></td>
-        </tr>
-              <!-- Outros produtos aqui -->
-          </tbody>
+            <td><input type="number" min="0" value="0" class="troca" /></td>
+          </tr>
+          <!-- Outros produtos aqui -->
+        </tbody>
       </table>
 
       <label for="retirada">Vai retirar na loja? (-19%)</label>
-      <input type="checkbox" id="retirada" name="retirada"><br><br>
+      <input type="checkbox" id="retirada" name="retirada" /><br /><br />
 
       <p id="valorTotalCompra">Valor Total da Compra: R$ 0,00</p>
 
       <button type="submit">Enviar Pedido</button>
-  </form>
+    </form>
 
-  <script src="../forms/pedidos.js"></script>
+    <script src="../forms/pedidos.js"></script>
 
-  <div class="">
-    <!-- Menu de Navegação -->
-    <nav class="menu">
-      <ul>
+    <div class="">
+      <!-- Menu de Navegação -->
+      <nav class="menu">
+        <ul>
           <li><a href="../index.html">Menu</a></li>
           <li><a href="../pages/produtos.html">Produtos</a></li>
           <li><a href="../pages/tabela.html">Tabela de Produtos</a></li>
           <li><a href="../pages/pedidos.html">Pedidos</a></li>
           <li><a href="../pages/onde_tem.html">Onde Tem</a></li>
           <li><a href="../pages/localizacao.html">Localização</a></li>
-      </ul>
-  </nav>
-  </div>
-</body>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>

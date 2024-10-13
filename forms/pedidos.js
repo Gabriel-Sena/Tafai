@@ -1,55 +1,62 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const tabela = document.getElementById('tabelaProdutos');
-    const valorTotalCompra = document.getElementById('valorTotalCompra');
-    const retiradaCheckbox = document.getElementById('retirada');
+document.addEventListener("DOMContentLoaded", function () {
+  const tabela = document.getElementById("tabelaProdutos");
+  const valorTotalCompra = document.getElementById("valorTotalCompra");
+  const retiradaCheckbox = document.getElementById("retirada");
 
-    function atualizarValores() {
-        let total = 0;
+  function atualizarValores() {
+    let total = 0;
 
-        tabela.querySelectorAll('tbody tr').forEach(row => {
-            const quantidadeInput = row.querySelector('.quantidade');
-            const trocaInput = row.querySelector('.troca');
-            const valorTotalTd = row.querySelector('.valorTotal');
+    tabela.querySelectorAll("tbody tr").forEach((row) => {
+      const quantidadeInput = row.querySelector(".quantidade");
+      const trocaInput = row.querySelector(".troca");
+      const valorTotalTd = row.querySelector(".valorTotal");
 
-            const precoUnitario = parseFloat(row.cells[5].innerText.replace('R$', '').replace(',', '.'));
-            const caixas = parseInt(quantidadeInput.value) || 0;
-            const embalagensPorCaixa = parseInt(row.cells[4].innerText.split('X')[0]) || 0;
-            const troca = parseInt(trocaInput.value) || 0;
+      const precoUnitario = parseFloat(
+        row.cells[5].innerText.replace("R$", "").replace(",", ".")
+      );
+      const caixas = parseInt(quantidadeInput.value) || 0;
+      const embalagensPorCaixa =
+        parseInt(row.cells[4].innerText.split("X")[0]) || 0;
+      const troca = parseInt(trocaInput.value) || 0;
 
-            const valorTotal = (caixas * embalagensPorCaixa - troca) * precoUnitario;
-            valorTotalTd.innerText = `R$ ${valorTotal.toFixed(2)}`;
+      const valorTotal = (caixas * embalagensPorCaixa - troca) * precoUnitario;
+      valorTotalTd.innerText = `R$ ${valorTotal.toFixed(2)}`;
 
-            total += valorTotal;
-        });
+      total += valorTotal;
+    });
 
-        if (retiradaCheckbox.checked) {
-            total *= 0.81; // Desconto de 19%
-        }
-
-        valorTotalCompra.innerText = `Valor Total da Compra: R$ ${total.toFixed(2)}`;
+    if (retiradaCheckbox.checked) {
+      total *= 0.81; // Desconto de 19%
     }
 
-    tabela.addEventListener('input', atualizarValores);
-    retiradaCheckbox.addEventListener('change', atualizarValores);
+    valorTotalCompra.innerText = `Valor Total da Compra: R$ ${total.toFixed(
+      2
+    )}`;
+  }
 
-    document.getElementById('pedidoForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        
-        const formData = new FormData(this);
-        const produtos = [];
+  tabela.addEventListener("input", atualizarValores);
+  retiradaCheckbox.addEventListener("change", atualizarValores);
 
-        tabela.querySelectorAll('tbody tr').forEach(row => {
-            const codigo = row.cells[0].innerText;
-            const produto = row.cells[2].innerText;
-            const caixas = row.querySelector('.quantidade').value;
-            const troca = row.querySelector('.troca').value;
+  document
+    .getElementById("pedidoForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
 
-            produtos.push({ codigo, produto, caixas, troca });
-        });
+      const formData = new FormData(this);
+      const produtos = [];
 
-        formData.append('produtos', JSON.stringify(produtos));
+      tabela.querySelectorAll("tbody tr").forEach((row) => {
+        const codigo = row.cells[0].innerText;
+        const produto = row.cells[2].innerText;
+        const caixas = row.querySelector(".quantidade").value;
+        const troca = row.querySelector(".troca").value;
 
-        // Envio do pedido
-        alert('Pedido enviado com sucesso!');
+        produtos.push({ codigo, produto, caixas, troca });
+      });
+
+      formData.append("produtos", JSON.stringify(produtos));
+
+      // Envio do pedido
+      alert("Pedido enviado com sucesso!");
     });
 });

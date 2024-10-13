@@ -2,78 +2,79 @@
 @import url(../global.css);
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Altura da viewport */
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Altura da viewport */
 }
 
 h1 {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .product-container {
-    display: flex;
-    flex: 1; /* Ocupa o espaço restante */
-    padding: 20px;
+  display: flex;
+  flex: 1; /* Ocupa o espaço restante */
+  padding: 20px;
 }
 
 .product-image {
-    flex: 1;
-    background-size: contain; /* Ajusta a imagem para caber na área sem cortar */
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 50%; /* Define o tamanho máximo da imagem para evitar rolagem */
-    margin-right: 5%; /* Espaço entre a imagem e as informações */
+  flex: 1;
+  background-size: contain; /* Ajusta a imagem para caber na área sem cortar */
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 50%; /* Define o tamanho máximo da imagem para evitar rolagem */
+  margin-right: 5%; /* Espaço entre a imagem e as informações */
 }
 
 .product-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .product-table {
-    width: 100%;
-    border-collapse: collapse; /* Remove os espaços entre bordas das células */
+  width: 100%;
+  border-collapse: collapse; /* Remove os espaços entre bordas das células */
 }
 
-.product-table th, .product-table td {
-    border: 1px solid #ccc; /* Borda fina para as células */
-    padding: 10px;
-    text-align: left; /* Alinha o texto à esquerda */
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc; /* Borda fina para as células */
+  padding: 10px;
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .product-table th {
-    background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
-    font-weight: bold;
+  background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
+  font-weight: bold;
 }
 
 .unit-image {
-    display: block; /* Garante que a imagem seja exibida como um bloco */
-    margin: 20px auto 0 auto; /* Centraliza a imagem horizontalmente e adiciona uma margem superior */
-    width: 150px; /* Define a largura da imagem */
+  display: block; /* Garante que a imagem seja exibida como um bloco */
+  margin: 20px auto 0 auto; /* Centraliza a imagem horizontalmente e adiciona uma margem superior */
+  width: 150px; /* Define a largura da imagem */
 }
 
 .button-container {
-    text-align: center; /* Centraliza o botão */
-    margin: 20px 0;
+  text-align: center; /* Centraliza o botão */
+  margin: 20px 0;
 }
 
 .back-button {
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .back-button:hover {
-    background-color: #9b0606;
+  background-color: #9b0606;
 }
